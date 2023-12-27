@@ -1,111 +1,75 @@
-@media (max-width: 500px) {
-    header {
-        margin-left: 0%;
-        margin-right: 0%;
-        flex-direction: column;
-        /* Coloca los elementos del header en vertical en pantallas muy pequeñas */
-        align-items: center;
-    }
-
-    .redireccionar_a_comprar {
-        text-align: center;
-        /* Centra el texto grande en pantallas muy pequeñas */
-    }
-
-    /*  .superponer {
-        position: relative;
-        /* Cambia a position: relative para evitar problemas en pantallas pequeñas */
-    /* top: 5%;
-        right: 5%;/* Adapta los márgenes para mejor ajuste */
-
-    /*  } */
-
-    .foto_portada,
-    .video_portada {
-        width: 100%;
-        /* Ocupa el ancho completo del contenedor */
-        height: auto;
-        /* Mantiene la proporción de la imagen/video */
-        position: relative;
-        /* Cambia a position: relative para mejor adaptación */
-        top: 0;
-        bottom: 0;
-    }
-
-}
-
-*/ body {
-    background-color: rgb(139, 138, 136);
-}
-
-.navegador {
+header {
+    width: 100%; /*se expande al ancho*/
+    height: 62px;
+    flex-shrink: 0;
     width: 100%;
+    display: flex;
+    background-color: #093931;
+    /* Coloca los elementos del header en vertical en pantallas muy pequeñas */
+    justify-content: space-around;
+    align-items: center;
+    /*centra basado en las letras*/
     max-width: 1300px;
     min-width: 200px;
-    /*extiende el ancho del navegador en diferentes (responsive)*/
+    /*extiende el ancho del navegador en diferentes pantallas (responsive)*/
     margin-left: auto;
     margin-right: auto;
 
-
 }
 
-header {
+.contenedor1nav {
     display: flex;
-    justify-content: space-around;
-    /*espacio entre el darling y el resto del menú*/
+    background-color: none;
     align-items: center;
-    background-color: #093931;
-
-}
-header::first-line{
-    justify-content: center;
-}
-
-header a {
-
     text-decoration: none;
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 24px;
+
+
+}
+
+.contenedor2nav {
+    justify-content: center;
+    background-color: none;
+    padding: 20px;
+}
+
+/*Estilo del inicio(Darling)*/
+
+.inicio a {
     color: #F5D38E;
-    word-wrap: break-word;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 46px;
+    /* 153.333% */
 }
 
-nav {
-    display: inline-flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 50%;
-
-    padding-right: 10.5px;
-    padding-top: 1%;
-    padding-bottom: 10.5px;
-
-
-}
-
-/*esta clase se llama para simular estar parados en el home*/
-.inicio_page {
-    color: #F2C66D;
-    cursor: pointer;
-    border-bottom: 2px solid #F2C66D;
-    border-radius: 1%;
-    /*pendiente para alargar bode<--------------------------------------------------*/
-    height: 100%;
-
-
-}
-
+/* Estilo a los enlaces */
 nav a {
+    width: 1440px;
+    height: 62px;
+    flex-shrink: 0;
+    padding: 10.5px 18.63px;
+    align-items: flex-end;
     color: white;
+    text-decoration: none;
+    background-color: #093931;
+    justify-content: space-around;
     font-size: 12px;
     font-family: 'Manrope', sans-serif;
     font-weight: 400;
     line-height: 22px;
     word-wrap: break-word;
-    /*evita desbordos de texto*/
 
 }
 
+/*cambia el color cuando se para seobre un item*/
+nav a:hover, nav button:hover {
+    color: #F2C66D;
+    cursor: pointer;
+}
+
+/* estilo a  botones */
 nav button {
     background-color: #093931;
     padding-top: 1%;
@@ -114,6 +78,12 @@ nav button {
     cursor: pointer;
 
 
+}
+
+/*estilo a las imágenes dentro de los botones */
+button img {
+   
+    
 }
 
 
@@ -210,7 +180,7 @@ div {
     /*redondea el icono*/
     border: 2.66px #EFFDFA solid;
     right: 27%;
-    /**/
+    
 
 
 }
