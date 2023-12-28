@@ -1,60 +1,64 @@
-header {
-    width: 100%; /*se expande al ancho*/
-    height: 62px;
-    flex-shrink: 0;
+body {
+    margin: 0;
+}
+
+.contenedor-principal {
+    background-color: #093931;
+    display: flex;
+    flex-direction: column;
+    /*pone en columna el padre e hijos que son contenedor header principal y caja 1) */
+    align-items: center;
+    /*estos pading se aplican al bloque entero manteniendo a proporción*/
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.header-principal {
     width: 100%;
     display: flex;
     background-color: #093931;
     /* Coloca los elementos del header en vertical en pantallas muy pequeñas */
-    justify-content: space-around;
     align-items: center;
-    /*centra basado en las letras*/
-    max-width: 1300px;
-    min-width: 200px;
-    /*extiende el ancho del navegador en diferentes pantallas (responsive)*/
-    margin-left: auto;
-    margin-right: auto;
-
+    flex-wrap: wrap;
+    padding-top: 12px;
 }
 
-.contenedor1nav {
+.header-principal-izquierdo {
     display: flex;
-    background-color: none;
-    align-items: center;
-    text-decoration: none;
-
-
-}
-
-.contenedor2nav {
-    justify-content: center;
-    background-color: none;
-    padding: 20px;
+    justify-content: start;
+    width: 45%;
 }
 
 /*Estilo del inicio(Darling)*/
-
-.inicio a {
+.header-logo {
     color: #F5D38E;
+    text-decoration: none;
     font-family: 'Cormorant Garamond', serif;
     font-size: 30px;
     font-style: normal;
     font-weight: 400;
     line-height: 46px;
-    /* 153.333% */
+}
+
+.header-principal-derecho {
+    display: flex;
+    justify-content: start;
+    width: 50%;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 /* Estilo a los enlaces */
-nav a {
-    width: 1440px;
-    height: 62px;
-    flex-shrink: 0;
+.link-navegacion {
     padding: 10.5px 18.63px;
-    align-items: flex-end;
+    /*para separ los items*/
     color: white;
     text-decoration: none;
     background-color: #093931;
-    justify-content: space-around;
     font-size: 12px;
     font-family: 'Manrope', sans-serif;
     font-weight: 400;
@@ -64,111 +68,93 @@ nav a {
 }
 
 /*cambia el color cuando se para seobre un item*/
-nav a:hover, nav button:hover {
+.link-navegacion:hover {
     color: #F2C66D;
     cursor: pointer;
 }
 
 /* estilo a  botones */
-nav button {
+.menu button {
     background-color: #093931;
     padding-top: 1%;
     padding-bottom: 1%px;
     border: none;
     cursor: pointer;
-
-
 }
 
-/*estilo a las imágenes dentro de los botones */
-button img {
+.banner-principal {
+    background-color: #093931;
+    display: flex;
+    /*hijos flexibles */
+    align-items: center;
+    justify-content: center;
+    /*para darles 50% width a cada  uno*/
+    height: 700px;
+}
+
+/*parte izquierda del  barner////////////////*/
+.contenedor-titulo {
+
+    text-align: start;
+    font-size: 60px;
+    font-weight: lighter;
+    font-family: 'Cormorant Garamond', serif;
+    color: #F5D38E;
+    word-wrap: break-word;
+    width: 43%;
+}
+
+.boton-comprar-ahora {
+    padding: 19px;
+    border-radius: 26px;
+    border: 1px solid #FFF;
+    background-color: #093931;
+    color: #FFF;
+    font-family: 'Manrope', sans-serif;
+    font-size: 38px;
+    line-height: 28px;
+    line-height: 18px;
+    /* 155.556% */
+}
+
+.boton-comprar-ahora:hover{
+    color: #F2C66D;
+    cursor: pointer;
+
+}
+/*parte derecha del barne//////////////////////////*/
+.contenedor-multimedia {
+    display: flex;
+    flex-grow: 1;   
+}
+
+.foto-portada {
+    object-fit: contain;  /*conserva la dimensión*/
+    width: 429px;
+    height: 493px;
+    z-index: 0;
+    top: 50%;
+    left: 3;
    
     
 }
 
-
-.caja1 {
-    background-color: #093931;
-    max-width: 1300px;
-    min-width: 200px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    height: 700px;
-
-
-}
-
-div {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    font-size: 72px;
-    color: #F5D38E;
-    font-size: 3vw;
-    font-family: 'Cormorant Garamond', serif;
-    font-weight: 400;
-    word-wrap: break-word;
-    text-align: justify;
-
-
-}
-
-.superponer {
-    position: absolute;
-    top: 10%;
-    right: 26%;
-
-
-}
-
-/*//////////////////////////////////
-/*Propiedades que me ayudan a ubicar la  multimedia derecha del primer contededor y la caja derecha*/
-/*///////////////////////////////////////////*/
-.foto_portada {
-    width: 407px;
-    height: 543px;
-    flex-shrink: 0;
+.video-portada {
     object-fit: contain;
-    /*conserva la dimensión*/
-    position: absolute;
-    /*elelemento se coloca*/
-    bottom: 139px;
-    top: 26px;
-    right: 78%;
-
-}
-
-.video_portada {
-    width: 321px;
+    width: 521px;
     height: 251px;
-    object-fit: contain;
-    position: relative;
-    right: 32%;
-    margin-top: 110px;
-
+    z-index: 1;
+    transform: translate(-50%, 50%); /*mueve la imagen*/   
 }
 
-.superponer button {
+.boton-multimedia {
+    z-index: 1;
+    transform:translate(-1050%, 470%) ;
     padding: 10.50px;
     background: none;
     border-radius: 26px;
     overflow: hidden;
-    width: 31px;
-    height: 31px;
     position: relative;
-
-    justify-content: flex-start;
-    align-items: flex-start;
-    display: flex;
-    width: 10px;
-    height: 10px;
-    width: 100%;
-    height: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -180,7 +166,6 @@ div {
     /*redondea el icono*/
     border: 2.66px #EFFDFA solid;
     right: 27%;
-    
-
-
 }
+
+
