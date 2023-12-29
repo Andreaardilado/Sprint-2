@@ -3,7 +3,7 @@ body {
 }
 
 .contenedor-principal {
-    background-color: #093931;
+    background-color: #e1fcf7;
     display: flex;
     flex-direction: column;
     /*pone en columna el padre e hijos que son contenedor header principal y caja 1) */
@@ -31,6 +31,7 @@ body {
 
 /*Estilo del inicio(Darling)*/
 .header-logo {
+    margin: 5px;
     color: #F5D38E;
     text-decoration: none;
     font-family: 'Cormorant Garamond', serif;
@@ -90,11 +91,12 @@ body {
     justify-content: center;
     /*para darles 50% width a cada  uno*/
     height: 700px;
+
 }
 
 /*parte izquierda del  barner////////////////*/
 .contenedor-titulo {
-
+    margin: 5px;
     text-align: start;
     font-size: 60px;
     font-weight: lighter;
@@ -105,38 +107,41 @@ body {
 }
 
 .boton-comprar-ahora {
-    padding: 19px;
+    padding: 18px;
+    margin: 5px;
     border-radius: 26px;
     border: 1px solid #FFF;
     background-color: #093931;
     color: #FFF;
     font-family: 'Manrope', sans-serif;
-    font-size: 38px;
-    line-height: 28px;
-    line-height: 18px;
+    font-size: 30px;
+    line-height: 22px;
+    line-height: 17px;
     /* 155.556% */
 }
 
-.boton-comprar-ahora:hover{
+.boton-comprar-ahora:hover {
     color: #F2C66D;
     cursor: pointer;
 
 }
+
 /*parte derecha del barne//////////////////////////*/
 .contenedor-multimedia {
     display: flex;
-    flex-grow: 1;   
+    flex-grow: 1;
 }
 
 .foto-portada {
-    object-fit: contain;  /*conserva la dimensión*/
+    object-fit: contain;
+    /*conserva la dimensión*/
     width: 429px;
     height: 493px;
     z-index: 0;
     top: 50%;
     left: 3;
-   
-    
+
+
 }
 
 .video-portada {
@@ -144,12 +149,13 @@ body {
     width: 521px;
     height: 251px;
     z-index: 1;
-    transform: translate(-50%, 50%); /*mueve la imagen*/   
+    transform: translate(-50%, 50%);
+    /*mueve la imagen*/
 }
 
 .boton-multimedia {
     z-index: 1;
-    transform:translate(-1050%, 470%) ;
+    transform: translate(-1050%, 470%);
     padding: 10.50px;
     background: none;
     border-radius: 26px;
@@ -168,4 +174,68 @@ body {
     right: 27%;
 }
 
+/*Carrusel 1//////////////////////////////*/
+.contenedor-principal3 {
+    background-color: #eb2222;
+    display: flex;
+    /*estos pading se aplican al bloque entero manteniendo a proporción*/
+    padding-left: 150px;
+    padding-right: 150px;
 
+}
+
+.titulo-carrusel1 {
+    color: #093931;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 60;
+    line-height: 78px;
+}
+
+.contenedor-carrusel1-texto {
+    width: 20%;
+    background-color: #FFF;
+
+}
+
+.texto-carrusel1 {
+    margin: 5px;
+    color: #9095A0;
+    font-family: 'Manrope', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.fotos-carrusel1 {
+    display: flex;
+    width: 80%;
+    background-color:#FFF;
+
+   
+}
+
+.galeria-carrusel1 {
+    max-width: 100%;
+    object-fit: contain;
+    /*conserva la dimensión*/
+    width: calc(100% / 4 - 60px);
+    height: 320px;
+    margin: 0px 0;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    flex-basis: 100px; 
+    
+}
+
+.ref-precio {
+    max-width: 100%;
+    color: #171A1F;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 24px;    
+    margin-top: px;
+    
+
+}
