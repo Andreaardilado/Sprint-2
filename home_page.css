@@ -29,9 +29,7 @@ body {
     justify-content: start;
 }
 
-
 /*Estilo del inicio(Darling)*/
-
 .header-logo {
     margin: 5px;
     color: #F5D38E;
@@ -55,9 +53,7 @@ body {
     flex-wrap: wrap;
 }
 
-
 /* Estilo a los enlaces */
-
 .link-navegacion {
     padding: 10.5px 18.63px;
     /*para separ los items*/
@@ -69,19 +65,16 @@ body {
     font-weight: 400;
     line-height: 22px;
     word-wrap: break-word;
+
 }
 
-
 /*cambia el color cuando se para seobre un item*/
-
 .link-navegacion:hover {
     color: #F2C66D;
     cursor: pointer;
 }
 
-
 /* estilo a  botones */
-
 .menu button {
     background-color: #093931;
     padding-top: 1%;
@@ -98,11 +91,10 @@ body {
     justify-content: center;
     /*para darles 50% width a cada  uno*/
     height: 700px;
+
 }
 
-
 /*parte izquierda del  barner////////////////*/
-
 .contenedor-titulo {
     margin: 5px;
     text-align: start;
@@ -131,11 +123,10 @@ body {
 .boton-comprar-ahora:hover {
     color: #F2C66D;
     cursor: pointer;
+
 }
 
-
 /*parte derecha del barne//////////////////////////*/
-
 .contenedor-multimedia {
     display: flex;
     flex-grow: 1;
@@ -147,20 +138,16 @@ body {
     /*conserva la dimensión*/
     width: 429px;
     height: 493px;
-<<<<<<< HEAD
 
 
-=======
-    z-index: 0;
-    top: 50%;
-    left: 3;
->>>>>>> 7539b7f9775e3bf3ca7a74d0ac18872d015af0d9
 }
 
 .video-portada {
-    height: 251px;/*baja lafoto del vídeo*/
+    height: 251px;
+    /*baja lafoto del vídeo*/
     /*mueve la imagen*/
-    position: absolute;/*va con relative para mover las img*/
+    position: absolute;
+    /*va con relative para mover las img*/
     bottom: 25%;
     right: 17%;
 }
@@ -189,7 +176,6 @@ body {
     bottom: 39%;
 }
 
-/* Estilos de la sección contenedor-principal2 */
 .contenedor-principal2 {
     display: flex;
     justify-content: space-around;
@@ -230,16 +216,13 @@ body {
     text-align: center;
 }
 
-
 /*Carrusel 1//////////////////////////////*/
-
 .contenedor-principal3 {
     background-color: #FFF;
     display: flex;
     /*estos pading se aplican al bloque entero manteniendo a proporción*/
     padding-left: 150px;
     padding-right: 150px;
-<<<<<<< HEAD
 }
 
 .contenedor-carrusel1 {
@@ -255,7 +238,8 @@ body {
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
-    line-height: 28px; /* 150% */
+    line-height: 28px;
+    /* 150% */
 }
 
 .carrusel-card-precio {
@@ -271,8 +255,6 @@ body {
 .contenedor-carrusel1-texto {
     width: 24%;
     margin: 5px;
-=======
->>>>>>> 7539b7f9775e3bf3ca7a74d0ac18872d015af0d9
 }
 
 .titulo-carrusel1 {
@@ -284,9 +266,8 @@ body {
     line-height: 78px;
 }
 
-<<<<<<< HEAD
 .texto-carrusel1 {
-     
+
     margin: 5px;
     color: #9095A0;
     font-family: 'Manrope', sans-serif;
@@ -305,11 +286,6 @@ body {
     color: #0D554A;
     font-family: 'Manrope', sans-serif;
     font-size: 18;
-=======
-.contenedor-carrusel1-texto {
-    width: 20%;
-    background-color: #FFF;
->>>>>>> 7539b7f9775e3bf3ca7a74d0ac18872d015af0d9
 }
 
 .contenedor-carrusel1-galeria {
@@ -335,7 +311,8 @@ body {
 .fotos-carrusel1 {
     width: 276px;
     height: 320px;
-    border-radius: 8px 8px 0 0; /*este borde se le da también a la card para sean coherentes*/
+    border-radius: 8px 8px 0 0;
+    /*este borde se le da también a la card para sean coherentes*/
 }
 
 /*carrusel 2///////////////////////////////////*/
@@ -357,7 +334,7 @@ body {
 .contenedor-carrusel2-texto {
     width: 24%;
     margin: 5px;
-    
+
 }
 
 .titulo-carrusel2 {
@@ -379,16 +356,13 @@ body {
     line-height: 26px;
 }
 
-<<<<<<< HEAD
 .boton-carrusel2 {
     padding: 15px;
     margin: 5px 10px;
     border-radius: 26px;
     border: 1px solid #0D554A;
-    ;
     background-color: none;
     color: #0D554A;
-    ;
     font-family: 'Manrope', sans-serif;
     font-size: 30px;
     line-height: 22px;
@@ -400,25 +374,6 @@ body {
     width: 100%;
     height: 100%;
     overflow: hidden;
-
-=======
-.fotos-carrusel1 {
-    display: flex;
-    width: 80%;
-    background-color: #FFF;
-}
-
-.galeria-carrusel1 {
-    max-width: 100%;
-    object-fit: contain;
-    /*conserva la dimensión*/
-    width: calc(100% / 4 - 60px);
-    height: 320px;
-    margin: 0px 0;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    flex-basis: 100px;
->>>>>>> 7539b7f9775e3bf3ca7a74d0ac18872d015af0d9
 }
 
 .galeria-fotos-carrusel2 {
@@ -436,10 +391,8 @@ body {
     box-shadow: 0px 0px 1px 0px rgba(23, 26, 31, 0.07), 0px 0px 2px 0px rgba(23, 26, 31, 0.12);
     list-style: none;
     color: #171A1F;
-
     font-family: 'Cormorant Garamond', serif;
     font-size: 24px;
-<<<<<<< HEAD
     font-style: normal;
     font-weight: 700;
     line-height: 36px;
@@ -450,8 +403,3 @@ body {
     width: 100%;
     height: 100%;
 }
-=======
-    margin-top: px;
-}
-
->>>>>>> 7539b7f9775e3bf3ca7a74d0ac18872d015af0d9
