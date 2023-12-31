@@ -3,7 +3,7 @@ body {
 }
 
 .contenedor-principal {
-    background-color: #d5e6e3;
+    background-color: #e1fcf7;
     display: flex;
     flex-direction: column;
     /*pone en columna el padre e hijos que son contenedor header principal y caja 1) */
@@ -21,12 +21,12 @@ body {
     align-items: center;
     flex-wrap: wrap;
     padding-top: 12px;
-    justify-content: space-between;
 }
 
 .header-principal-izquierdo {
     display: flex;
     justify-content: start;
+    width: 45%;
 }
 
 
@@ -139,7 +139,6 @@ body {
 .contenedor-multimedia {
     display: flex;
     flex-grow: 1;
-    position: relative;
 }
 
 .foto-portada {
@@ -147,34 +146,28 @@ body {
     /*conserva la dimensión*/
     width: 429px;
     height: 493px;
-<<<<<<< HEAD
-
-
-=======
     z-index: 0;
     top: 50%;
     left: 3;
->>>>>>> 7539b7f9775e3bf3ca7a74d0ac18872d015af0d9
 }
 
 .video-portada {
-    height: 251px;/*baja lafoto del vídeo*/
+    object-fit: contain;
+    width: 521px;
+    height: 251px;
+    z-index: 1;
+    transform: translate(-50%, 50%);
     /*mueve la imagen*/
-    position: absolute;/*va con relative para mover las img*/
-    bottom: 25%;
-    right: 17%;
-}
-
-.video {
-    height: 320px;
 }
 
 .boton-multimedia {
+    z-index: 1;
+    transform: translate(-1050%, 470%);
     padding: 10.50px;
     background: none;
     border-radius: 26px;
     overflow: hidden;
-    position: absolute;
+    position: relative;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -185,8 +178,7 @@ body {
     height: 50px;
     /*redondea el icono*/
     border: 2.66px #EFFDFA solid;
-    right: 32%;
-    bottom: 39%;
+    right: 27%;
 }
 
 /* Estilos de la sección contenedor-principal2 */
@@ -234,143 +226,29 @@ body {
 /*Carrusel 1//////////////////////////////*/
 
 .contenedor-principal3 {
-    background-color: #FFF;
+    background-color: #eb2222;
     display: flex;
     /*estos pading se aplican al bloque entero manteniendo a proporción*/
     padding-left: 150px;
     padding-right: 150px;
-<<<<<<< HEAD
-}
-
-.contenedor-carrusel1 {
-    background-color: #fff;
-    display: flex;
-    height: 506px;
-}
-
-.carrusel-card-titulo {
-    margin: 12px;
-    color: #171A1F;
-    font-family: "Cormorant Garamond", serif;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 28px; /* 150% */
-}
-
-.carrusel-card-precio {
-    margin: 0 0 12px 12px;
-    color: #171A1F;
-    font-family: "Manrope", serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 26px;
-}
-
-.contenedor-carrusel1-texto {
-    width: 24%;
-    margin: 5px;
-=======
->>>>>>> 7539b7f9775e3bf3ca7a74d0ac18872d015af0d9
 }
 
 .titulo-carrusel1 {
     color: #093931;
     font-family: 'Cormorant Garamond', serif;
-    font-size: 45px;
+    font-size: 80px;
     font-style: normal;
     font-weight: 60;
     line-height: 78px;
 }
 
-<<<<<<< HEAD
-.texto-carrusel1 {
-     
-    margin: 5px;
-    color: #9095A0;
-    font-family: 'Manrope', sans-serif;
-    font-size: 16px;
-    /* font-style: normal; */
-    /* font-weight: 400; */
-    line-height: 26px;
-}
-
-.boton-carrusel1 {
-    padding: 12px 59px;
-    margin: 0%;
-    border-radius: 26px;
-    border: 1px solid #0D554A;
-    background-color: #00000000;
-    color: #0D554A;
-    font-family: 'Manrope', sans-serif;
-    font-size: 18;
-=======
 .contenedor-carrusel1-texto {
     width: 20%;
     background-color: #FFF;
->>>>>>> 7539b7f9775e3bf3ca7a74d0ac18872d015af0d9
 }
 
-.contenedor-carrusel1-galeria {
-    background-color: #fff;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-
-.contenedor-card-carrusel {
-    display: flex;
-    gap: 20px;
-}
-
-.galeria-fotos-carrusel1 {
-    display: flex;
-    flex-direction: column;
-    float: left;
-    border-radius: 8px;
-    box-shadow: 0px 0px 1px 0px rgba(23, 26, 31, 0.07), 0px 0px 2px 0px rgba(23, 26, 31, 0.12);
-}
-
-.fotos-carrusel1 {
-    width: 276px;
-    height: 320px;
-    border-radius: 8px 8px 0 0; /*este borde se le da también a la card para sean coherentes*/
-}
-
-/*carrusel 2///////////////////////////////////*/
-.contenedor-principal4 {
-    background-color: #634e4e;
-    display: flex;
-    /*estos pading se aplican al bloque entero manteniendo a proporción*/
-    padding-left: 150px;
-    padding-right: 150px;
-}
-
-.contenedor-carrusel2 {
-    background-color: #FAFAFB;
-    display: flex;
-    height: 450px;
-
-}
-
-.contenedor-carrusel2-texto {
-    width: 24%;
+.texto-carrusel1 {
     margin: 5px;
-    
-}
-
-.titulo-carrusel2 {
-    color: #093931;
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 45px;
-    font-style: normal;
-    font-weight: 60;
-    line-height: 78px;
-}
-
-.texto-carrusel2 {
-    margin: 10px;
     color: #9095A0;
     font-family: 'Manrope', sans-serif;
     font-size: 20px;
@@ -379,29 +257,6 @@ body {
     line-height: 26px;
 }
 
-<<<<<<< HEAD
-.boton-carrusel2 {
-    padding: 15px;
-    margin: 5px 10px;
-    border-radius: 26px;
-    border: 1px solid #0D554A;
-    ;
-    background-color: none;
-    color: #0D554A;
-    ;
-    font-family: 'Manrope', sans-serif;
-    font-size: 30px;
-    line-height: 22px;
-    line-height: 17px;
-}
-
-.contenedor-carrusel2-galeria {
-    background-color: #FAFAFB;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-
-=======
 .fotos-carrusel1 {
     display: flex;
     width: 80%;
@@ -418,40 +273,12 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     flex-basis: 100px;
->>>>>>> 7539b7f9775e3bf3ca7a74d0ac18872d015af0d9
 }
 
-.galeria-fotos-carrusel2 {
-    float: left;
-    width: 25%;
-    max-width: 20%;
-    object-fit: cover;
-    width: 276px;
-    height: 320px;
-    margin: 20px 20px 20px 20px;
-    border-radius: 10px;
-    border-radius: 8px;
-    background: #FFF;
-    position: relative;
-    box-shadow: 0px 0px 1px 0px rgba(23, 26, 31, 0.07), 0px 0px 2px 0px rgba(23, 26, 31, 0.12);
-    list-style: none;
+.ref-precio {
+    max-width: 100%;
     color: #171A1F;
-
     font-family: 'Cormorant Garamond', serif;
     font-size: 24px;
-<<<<<<< HEAD
-    font-style: normal;
-    font-weight: 700;
-    line-height: 36px;
-    /* 150% */
-}
-
-.fotos-carrusel2 {
-    width: 100%;
-    height: 100%;
-}
-=======
     margin-top: px;
 }
-
->>>>>>> 7539b7f9775e3bf3ca7a74d0ac18872d015af0d9
