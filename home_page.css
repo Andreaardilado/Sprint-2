@@ -175,7 +175,7 @@ body {
     right: 32%;
     bottom: 39%;
 }
-
+/*contenedor principal delivery/////////*/
 .contenedor-principal2 {
     display: flex;
     justify-content: space-around;
@@ -188,12 +188,15 @@ body {
     flex: 1;
     text-align: center;
     margin-bottom: 10px;
+    margin: 150px;
+    padding: 150px;
 }
 
 /* Resto de los estilos*/
 .icono-servicios {
     width: 62px;
     height: 62px;
+    flex-shrink: 0;
 }
 
 .titulo-servicios {
@@ -202,20 +205,19 @@ body {
     font-family: 'Cormorant Garamond', sans-serif;
     font-weight: 600;
     line-height: 10px;
-    word-wrap: break-word;
+    line-height: 28px;
 }
 
 .texto-servicios {
     color: #9095A0;
     font-size: 16px;
     font-family: 'Manrope', sans-serif;
-    font-style: normal;
     font-weight: 400;
     line-height: 26px;
-    word-wrap: break-word;
+    word-wrap: break-word
     text-align: center;
-}
 
+}
 /*Carrusel 1//////////////////////////////*/
 .contenedor-principal3 {
     background-color: #FFF;
@@ -316,7 +318,7 @@ body {
 }
 
 /*carrusel 2///////////////////////////////////*/
-.contenedor-principal4 {
+.contenedor-principal5 {
     background-color: #634e4e;
     display: flex;
     /*estos pading se aplican al bloque entero manteniendo a proporción*/
