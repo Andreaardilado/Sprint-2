@@ -3,7 +3,7 @@ body {
 }
 
 .contenedor-principal {
-    background-color: #d5e6e3;
+    background-color: #093931;
     display: flex;
     flex-direction: column;
     /*pone en columna el padre e hijos que son contenedor header principal y caja 1) */
@@ -188,6 +188,8 @@ body {
     flex: 1;
     text-align: center;
     margin-bottom: 10px;
+    padding-left: 150px;
+    padding-right: 150px;
 }
 
 /* Resto de los estilos*/
@@ -218,7 +220,7 @@ body {
 
 /*Carrusel 1//////////////////////////////*/
 .contenedor-principal3 {
-    background-color: #FFF;
+
     display: flex;
     /*estos pading se aplican al bloque entero manteniendo a proporción*/
     padding-left: 150px;
@@ -226,7 +228,7 @@ body {
 }
 
 .contenedor-carrusel1 {
-    background-color: #fff;
+
     display: flex;
     height: 506px;
 }
@@ -317,7 +319,7 @@ body {
 
 /*carrusel 2///////////////////////////////////*/
 .contenedor-principal4 {
-    background-color: #634e4e;
+
     display: flex;
     /*estos pading se aplican al bloque entero manteniendo a proporción*/
     padding-left: 150px;
@@ -325,7 +327,7 @@ body {
 }
 
 .contenedor-carrusel2 {
-    background-color: #FAFAFB;
+
     display: flex;
     height: 450px;
 
@@ -402,4 +404,167 @@ body {
 .fotos-carrusel2 {
     width: 100%;
     height: 100%;
+}
+
+/*conntenedor our story///////////////////////////*/
+
+.contenedor-principal-our-story {
+    background-color: #FAFAFB;
+    display: flex;
+    padding-left: 150px;
+    padding-right: 150px;
+    width: 1440px;
+    height: 564px;
+
+
+}
+
+.contenedor-our-story {
+
+    position: relative;
+    flex-direction: column;
+
+}
+
+.titulo-our-story {
+    color: #0D554A;
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 56px;
+
+}
+
+.video-our-story {
+    margin: 40px;
+    width: 1176px;
+    height: 368px;
+    object-fit: cover;
+    background-color: #FAFAFB;
+
+}
+
+.boton-our-story {
+    display: flex;
+    width: 52px;
+    height: 52px;
+    padding: 10.5px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 26px;
+    background: #FFF;
+    position: absolute;
+    left: 47%;
+    top: 57%;
+}
+
+/*contenedor from the people////////////////*/
+
+.contenerdor-principal-from-the-people {
+    padding-left: 150px;
+    padding-right: 150px;
+    height: 500px;
+    background-color: #0D554A;
+}
+
+.contenerdor-from-the-people {
+    background-color: #0D554A;
+    display: flex;
+    padding: 42px;
+
+
+}
+
+.contenedor-texto-from-the-people {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 140px 0px 0px;
+}
+
+.titulo-from-the-people {
+    color: #FFF;
+    font-family: Cormorant Garamond;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 68px;
+    margin: 101px 0px 0px 0px;
+
+
+}
+
+.texto-from-the-people {
+    color: #FFF;
+    font-family: 'Manrope', serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    flex-direction: column;
+
+}
+
+.cita-from-the-people {
+    display: flex;
+    color: #FFF;
+    font-family: 'Manrope', serif;
+    align-items: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    width: 324px;
+    padding: 60px;
+
+}
+
+.imagen-from-the-people {
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 696px;
+    height: 375px;
+    border-radius: 8px;
+    background: rgba(23, 26, 31, 0.30);
+    flex-direction: row;
+    object-fit: contain;
+}
+
+.foto-from-the-people {
+    width: 300px;
+    height: 375px;
+    border-radius: 10px;
+}
+
+.boton-from-the-people-right {
+    position: absolute;
+    display: flex;
+    padding: 10.5px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    background-color: #EFFDFA;
+    clip-path: polygon(21.9534px 6.45341px, 19.875px 4.375px, 8.25px 16px, 19.875px 27.625px, 21.9534px 25.5466px, 12.4068px 16px);
+    bottom: -15px;
+    left: 554px;
+}
+
+.boton-from-the-people-left {
+    position: absolute;
+    display: flex;
+    padding: 10.5px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    background-color: #EFFDFA;
+    clip-path: polygon(9.5415px 25.5466px, 11.6199px 27.625px, 23.2449px 16px, 11.6199px 4.375px, 9.5415px 6.45341px, 19.088px 16px);
+    top: 357px;
+    right: 50px;
+
 }
