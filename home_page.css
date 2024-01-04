@@ -495,51 +495,136 @@ line-height: 48px; /* 150% */
 }
 
  /* footer///// */
-.footer{
+
+ 
+.footer-contenedor{
      background-color: #093931;
-     display: flex;
      padding-left: 150px;
      padding-right: 150px;
+     display: flex;
+     justify-content:center;
+    
 }
-.contenedor-footer{
+.footer{
+    display: flex;
+    background: #093931
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
     width: 1440px;
     height: 234px;
-    flex-shrink: 0;
-    background: #093931;
 }
  .footer-izquierdo{
+    display: flex;
+    flex-direction: column;
+ }
+ 
+ .footer-darling{
+    margin: 5px;
+    color: #F5D38E;
+    text-decoration: none;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 46px; /* Darling */
+}
 
- }
- .footer-logo{
+.footer-texto{
+    color: #FFF;
+  font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;  /* 2022 BrandInc*/
+     align-items: flex-end;
+     margin-top: 100px;
+}
+.footer-nav{
+    display: flex;
+    flex-direction: column;
+    justify-content:  center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.footer-email-form{
+    color: #FFF;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 150% */
+    align-items: center;
+    justify-content: flex-end;
+}
+.subscribe-tittle{
+    color: #FFF;
+    font-family: 'Cormorant Garamond', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* Subscribe to our newsettler */
+}
+
+.for-our-product{
+    color: white;
+    font-family: 'Manrope', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* for our product */
+    margin-top: 0;
+}
+
+#footer-email{
+    display: inline-flex;
+    padding: 7px 132px 6px 12px;
+    align-items: center;
+    gap: 6px;
+    border-radius: 18px 0px 0px 18px;
+    border: 1px solid #FFF;
+    background: rgba(0, 0, 0, 0.00);
+    position: relative;
+}
+ 
+#footer-email::placeholder{
+    color: #FFF;
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; 
     
- }
-             <p>© 2022 Brand, Inc.</p>
-     </div>
-     <div class="footer-central">
-            <a href="shop">Shop</a>
-            <a href="collection">Collections</a>
-            <a href="about">About</a>
-            <a href="contact">Contact</a>
-            <a href="privacy">Privacy</a>
-            <a href="terms">Terms</a>
-     </div>
-     <div class="footer-izquierdo">
-         <div class="subscribe-section">
-             <h5 class="subscribe">Subscribe to our newsletter</h5>
-             <p class="subscribe-texto">For product announcements and exclusive insights</p>
-             <form action=""></form>
-             <input type="email" placeholder="Input your email"></input>
-             <input type="submit" value="Subscribe"
-             <img src="./images/Mail.png" alt="Mail-icon">
-             </form>
-         </div>
-         <div class="principal-redes">
-           <figure>
-             <img src="./images/Logo twitter 1.png" alt="twitter">
-             <img src="./images/Logo facebook 1.png" alt="facebook">
-             <img src="./images/Logo linkedin 1.png" alt="linkedin">
-             <img src="./images/Logo youtube 1.png" alt="Youtube">
-            </figure>
-         </div>
-     </div>
- </section>
+}
+#footer-email-btn{
+    display: inline-flex;
+    padding: 7px 23.5px 7px 24.5px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 18px 18px 0px;
+    background: #F2C66D;
+    color: #6B4A09;
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /*Bottom subscribe*/
+    border: none;
+}
+
+.icono-mail:{
+    width: 16px;
+    height: 16px;
+    padding: auto;
+    position:absolute
+    left: 10px;
+}
+
+
+.principal-redes{
+   flex-direction: row;
+   justify-content: flex-end;
+   background-color: white
+   align-content: end;
+   margin-top: 15% /*Redes*/
+}
