@@ -176,12 +176,14 @@ body {
     bottom: 39%;
 }
 
+/*contenedor principal delivery/////////*/
 .contenedor-principal2 {
     display: flex;
     justify-content: space-around;
     align-items: stretch;
     flex-wrap: wrap;
     background-color: white;
+    margin-top: 5px;
 }
 
 .contenedor-servicios {
@@ -196,6 +198,7 @@ body {
 .icono-servicios {
     width: 62px;
     height: 62px;
+    flex-shrink: 0;
 }
 
 .titulo-servicios {
@@ -204,18 +207,18 @@ body {
     font-family: 'Cormorant Garamond', sans-serif;
     font-weight: 600;
     line-height: 10px;
-    word-wrap: break-word;
+    line-height: 28px;
 }
 
 .texto-servicios {
     color: #9095A0;
     font-size: 16px;
     font-family: 'Manrope', sans-serif;
-    font-style: normal;
     font-weight: 400;
     line-height: 26px;
     word-wrap: break-word;
     text-align: center;
+
 }
 
 /*Carrusel 1//////////////////////////////*/
@@ -317,9 +320,96 @@ body {
     /*este borde se le da también a la card para sean coherentes*/
 }
 
-/*carrusel 2///////////////////////////////////*/
+/*Contenedor principal4. Our Collection///////////*/
 .contenedor-principal4 {
+    background-color: white;
+    padding-left: 150px;
+    padding-right: 150px;
+    width: 1440px;
+    height: 1082px;
+    flex-shrink: 0;
+}
 
+.contenedor-servicios-texto {
+    display: flex;
+    height: 150px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background-color: white;
+}
+
+.titulo-contenedor4 {
+    color: #0D554A;
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 56px;
+    /* 140% */
+    align-items: flex-start;
+}
+
+
+.contenedor-4-imagenes {
+    background-color: lightgray;
+    display: flex;
+    height: 1082px;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0px, 10px, 20px, 0px;
+}
+
+.fotos-contenedor4 {
+    width: 360px;
+    height: 360px;
+    margin: 0px 20px 20px 0px;
+    border-radius: 8px;
+    display: block;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.contenedor-card-titulos {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px;
+    /* 150% */
+}
+
+.boton-collection {
+    color: #0D554A;
+    font-family: 'Manrope', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    /* 155.556% */
+    display: inline-flex;
+    padding: 12px, 59px;
+    border: 26px, 26px;
+    align-items: baseline;
+    flex-direction: row;
+    border-radius: 26px;
+    border: 1px solid #0D554A;
+    background: rgba(0, 0, 0, 0.00);
+    justify-self: center;
+}
+
+
+
+/*carrusel 2///////////////////////////////////*/
+.contenedor-principal5 {
+    background-color: #634e4e;
     display: flex;
     /*estos pading se aplican al bloque entero manteniendo a proporción*/
     padding-left: 150px;
@@ -566,5 +656,23 @@ body {
     clip-path: polygon(9.5415px 25.5466px, 11.6199px 27.625px, 23.2449px 16px, 11.6199px 4.375px, 9.5415px 6.45341px, 19.088px 16px);
     top: 357px;
     right: 50px;
-
 }
+
+/* footer///// */
+.footer {
+    background-color: #093931;
+    display: flex;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.contenedor-footer {
+    width: 1440px;
+    height: 234px;
+    flex-shrink: 0;
+    background: #093931;
+}
+
+.footer-izquierdo {}
+
+.footer-logo {}
