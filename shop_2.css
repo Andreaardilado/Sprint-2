@@ -468,8 +468,8 @@ header {
 .card-carrusel {
     display: flex;
     gap: 24px;
-    margin: 72px 0px 72px 48px;
-    justify-content: space-around;
+    padding: 0 0 150px 99px;
+    margin: 0;
 }
 
 .fotos-carruseles {
