@@ -4,6 +4,7 @@ body {
     flex-direction: column;
     justify-content: center;
 }
+/*header*/
 
 header {
     background: #093931;
@@ -48,7 +49,6 @@ header {
     line-height: 22px;
     text-decoration: none;
     padding: 10.5px 18.63px;
-    /*para separ los items*/
     font-size: 12px;
 }
 
@@ -138,11 +138,6 @@ header {
     border-radius: 4px;
     box-shadow: 0px 4px 9px 0px rgba(23, 26, 31, 0.11), 0px 0px 2px 0px rgba(23, 26, 31, 0.12);
 }
-
-/*.izquierdo-detalles-fotos-1 {
-    display: flex;
-    flex-direction: row;
-}*/
 
 .izquierdo-detalles-fotos-row {
     width: 477px;
@@ -239,7 +234,6 @@ header {
     font-weight: 500;
     line-height: 20px;
     text-decoration-line: underline;
-
 }
 
 .tallas-botones {
@@ -264,7 +258,6 @@ header {
     font-style: normal;
     font-weight: 700;
     line-height: 26px;
-
 }
 
 .cantidades {
@@ -286,7 +279,6 @@ header {
     display: flex;
     width: 38px;
     padding: 9px 0px 8px 0px;
-
     justify-content: center;
     align-items: center;
     border-radius: 4px;
@@ -297,7 +289,6 @@ header {
     display: flex;
     width: 41px;
     padding: 9px 0px;
-
     justify-content: center;
     align-items: center;
     border-radius: 4px;
@@ -341,7 +332,6 @@ header {
     font-style: normal;
     font-weight: 400;
     line-height: 28px;
-
 }
 
 .desplegable {
@@ -352,7 +342,6 @@ header {
     font-weight: 400;
     line-height: 26px;
     text-decoration: none;
-
 }
 
 .menu-desplegable {
@@ -373,6 +362,8 @@ header {
 .item-desplegable li {
     list-style-type: none;
 }
+
+/*Articulo video*/
 
 .articulo-video {
     width: 1440px;
@@ -415,6 +406,10 @@ header {
     margin-left: 201px
 }
 
+.contenedor-boton {
+    display: flex;
+}
+
 .video-articulo {
     width: 1032px;
     height: 581px;
@@ -425,9 +420,9 @@ header {
 }
 
 .boton-articulo-video {
-    position: absolute;
-    top: 165%;
-    left: 50%;
+    position: relative;
+    top: 264px;
+    right: 497px;
     display: flex;
     width: 52px;
     height: 52px;
@@ -437,7 +432,6 @@ header {
     border-radius: 26px;
     background: #FFF;
     border-color: #FFF;
-
 }
 
 /*carrusel*/
@@ -457,11 +451,11 @@ header {
     font-weight: 600;
     line-height: 56px;
     margin-left: 105px;
+    width: 1440px;
 }
 
 .galeria-carruseles {
-    width: 100%;
-    height: 100%;
+    width: 1440px;
     overflow: hidden;
 }
 
@@ -477,6 +471,7 @@ header {
     flex-direction: column;
     border-radius: 8px;
     box-shadow: 0px 0px 1px 0px rgba(23, 26, 31, 0.07), 0px 0px 2px 0px rgba(23, 26, 31, 0.12);
+    list-style: none;
 }
 
 .fotos-carruseles1 {
@@ -504,11 +499,6 @@ header {
     font-weight: 400;
     line-height: 26px;
 }
-
-
-
-
-
 
 /*contenedor principal servicios-adicionales/////////*/
 
@@ -579,7 +569,6 @@ header {
     display: flex;
     flex-direction: column;
     width: 42.5%;
-
 }
 
 .titulo-from-the-people {
@@ -590,7 +579,6 @@ header {
     font-weight: 600;
     line-height: 68px;
     margin: 169px 144px 0px 132px;
-
 }
 
 .parrafos-from-the-people-1 {
@@ -660,6 +648,7 @@ header {
     top: -150px;
 }
 
+/*pie de página*/
 
 footer {
     background: #093931;
