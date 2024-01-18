@@ -693,6 +693,8 @@ input::placeholder{
     background-origin: border-box;
     padding-left: 8px
 }
+
+
 .mail-logo{
     display: flex;
     position: relative;
