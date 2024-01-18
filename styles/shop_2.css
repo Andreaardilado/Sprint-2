@@ -767,6 +767,13 @@ footer {
     line-height: 22px;
     margin: 16px 0 0 53px;
 }
+input::placeholder{
+    background-image: url("../images/Mail.png");
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-origin: border-box;
+    padding-left: 8px
+}
 
 .mail-logo {
     display: flex;

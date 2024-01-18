@@ -81,7 +81,7 @@ header {
     width: 1440px;
     height: 821px;
     background-color: #093931;
-    background-image: url(./images/olas_\ blancas.png);
+    background-image: url(../images/olas_\ blancas.png);
 }
 
 .barner-principal-izquierdo {
@@ -683,6 +683,15 @@ footer {
     font-weight: 400;
     line-height: 22px;
     margin: 16px 0 0 53px;
+
+}
+
+input::placeholder{
+    background-image: url("../images/Mail.png");
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-origin: border-box;
+    padding-left: 8px
 }
 .mail-logo{
     display: flex;
