@@ -48,7 +48,7 @@ header {
     line-height: 22px;
     text-decoration: none;
     padding: 10.5px 18.63px;
-    /*para separ los items*/
+    /para separ los items/
     font-size: 12px;
 }
 
@@ -77,7 +77,7 @@ header {
 
 /* Contenedor de regalo*/
 
-.thank-you-purchase{
+.thank-you-purchase {
     background-color: #fff;
     width: 1440px;
     display: flex;
@@ -86,16 +86,15 @@ header {
     margin: 54px 0px 0px 0px;
 }
 
-.catalogo{
+.catalogo {
     display: flex;
     justify-content: cente;
     flex-direction: column;
-    background-color: #FFF
+    background-color: #FFF;
     align-items: center;
-    margin: 0px 0px 0px -130px;
 }
 
-.foto-catalogo{
+.foto-catalogo {
     width: 295px;
     height: 295px;
     border-radius: 148px;
@@ -103,7 +102,8 @@ header {
     background: url(<path-to-image>), lightgray 0px -97px / 115.593% 173.22% no-repeat;
 
 }
-.titulo-regalo{
+
+.titulo-regalo {
     color: #171A1F;
     text-align: center;
     font-family: 'Cormorant Garamond', serif;
@@ -114,7 +114,7 @@ header {
     margin-top: 24px;
 }
 
-.texto{
+.texto {
     color: #9095A0;
     font-family: 'Manrope', sans-serif;
     font-size: 14px;
@@ -125,26 +125,30 @@ header {
 }
 
 /* Contenedor blanco centrado información detallada*/
-.contenedor-thank-you{
+.contenedor-thank-you {
     display: flex;
-    flex-direction: column;
     width: 1440px;
+    height: 651px;
+    flex-direction: column;
+    justify-content: center;
+    scroll-snap-align: center;
+    flex-wrap: wrap;
+    align-content: center;
+    margin: 0px 0px 150px 0px;
 }
 
 .payment-summary {
     display: flex;
     flex-direction: column;
-    margin: 0px 0px 150Px 400px;
-    width: 560px;
-    height: 651px;
     flex-shrink: 0;
-    border-radius: 4px;
-    background: white;
     padding: 25px 24px 24px 24px;
- }
+    border-radius: 4px;
+    background: #FFF;
+    box-shadow: 0px 0px 1px 0px rgba(23, 26, 31, 0.07), 0px 0px 2px 0px rgba(23, 26, 31, 0.12);
+}
 
- .foto-order{
-    display: flex;  
+.foto-order {
+    display: flex;
     justify-content: start;
     display: flex;
     justify-content: start;
@@ -152,12 +156,12 @@ header {
     width: 100%
 }
 
-.estilos-vectores{
+.estilos-vectores {
     width: 24px;
     height: 24px;
 }
 
-.titulos-vectores{
+.titulos-vectores {
     color: #9095A0;
     font-family: 'Manrope', sans-serif;
     font-size: 16px;
@@ -168,7 +172,7 @@ header {
 }
 
 
-.fecha{
+.fecha {
     color: #171A1F;
     text-align: right;
     font-family: 'Manrope', sans-serif;
@@ -179,7 +183,7 @@ header {
     margin: 0px 0px 0px 385px;
 }
 
-.nombre-cliente{
+.nombre-cliente {
     color: #171A1F;
     text-align: right;
     font-family: 'Cormorant Garamond', serif;
@@ -190,22 +194,22 @@ header {
     margin: 0px 0px 0px 340px;
 }
 
-.visa{
+.visa {
     width: 46px;
-    height: 32px;/* visa logo*/    
+    height: 32px; /* visa logo*/
     margin: 0px 0px 0px 325px;
 }
 
-.línea-horizontal{
-        display: flex;
-        width: 534px;
-        border-bottom: 0px solid #9095A0;
-        justify-content: space-between;
-        align-items: center;
-        margin: 10px 0px 10px 0px ;
+.línea-horizontal {
+    display: flex;
+    width: 534px;
+    border-bottom: 0px solid #9095A0;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0px 10px 0px;
 }
 
-.numero-factura{
+.numero-factura {
     color: #171A1F;
     text-align: right;
     font-family: 'Manrope', sans-serif;
@@ -216,14 +220,15 @@ header {
     margin: 0px 0px 0px 320px;
 }
 
-.total-factura{
+.total-factura {
     color: #171A1F;
     text-align: right;
     font-family: 'Manrope', sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 22px; /* $1058.72 */
+    line-height: 22px;
+    /* $1058.72 */
     margin: 0px 0px 0px 400px;
 }
 
@@ -233,15 +238,16 @@ header {
     justify-content: start;
     align-items: center;
     width: 100%;
+    gap: 16px;
 
 }
 
-.foto-order2::-webkit-scrollbar{
+.foto-order2::-webkit-scrollbar {
     width: 14px;
     height: 204px;
 }
 
-.foto-order2::-webkit-scrollbar-thumb{
+.foto-order2::-webkit-scrollbar-thumb {
     display: flex;
     width: 14px;
     border-bottom: 0px solid #9095A0;
@@ -254,9 +260,11 @@ header {
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 22px; /* order-line */
+    line-height: 22px;
+    /* order-line */
     margin: 20px 0px 0px 0px;
 }
+
 .estilos-fotos {
     width: 94px;
     height: 94px;
@@ -264,23 +272,25 @@ header {
 }
 
 .referencia {
-    padding: 0px 0px 0px 16px;
+    /padding: 0px 0px 0px 16px;//////////////////////
     color: #323842;
     font-family: 'Cormorant Garamond', serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
-    line-height: 26px; /* titulo de los productos */
+    line-height: 26px;
+    /* titulo de los productos */
 }
 
 .codigo {
-    padding: 0px 0px 0px 16px;
+    /padding: 0px 0px 0px 16px;//////////////////////
     color: #9095A0;
     font-family: 'Manrope', sans-serif;
     font-size: 11px;
     font-style: normal;
     font-weight: 400;
-    line-height: 18px; /*Codigos */   
+    line-height: 18px;
+    /*Codigos */
 }
 
 .precio {
@@ -293,46 +303,53 @@ header {
     line-height: 22px;
     width: 70px;
     flex-shrink: 0;
-    margin: 15px 0px 0px 230px;
+   margin: 15px 0px 0px 200px;
 }
 
-.cantidad{
+.cantidad {
     display: flex;
     width: 32px;
     height: 28px;
-    padding: 0px 0px 4px 16px;
     align-items: center;
     flex-shrink: 0;
+    border-radius: 14px;
+    background: #F3F4F6;
     color: #323842;
     font-family: 'Manrope', sans-serif;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
-    line-height: 20px; /*  X1 */
-    margin: -15px 0px 0px 0px;
+    line-height: 20px;
+    justify-content: center;
+    
 }
 
-.boton-compra{
-    width: 165px;
-    height: 26px;
-    display: inline-flex;
-    padding: 15px 15px 15px 16px;
+.contenedor-boton{
+    display: flex;
     justify-content: center;
+    height: 92px;
     align-items: center;
+}
+
+.boton-compra {
+
     border-radius: 22px;
     background: #0D554A;
-    margin: 24px 170px 0px 170px;
-    border: none;
+    display: inline-flex;
+    padding: 9px 15px 9px 16px;
+    justify-content: center;
+    align-items: center;
+    width: 173px;
+    height: 44px;
     color: #FFF;
-    font-family: 'Manrope', sans-serif;
+    font-family: 'Manrope',sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 26px; /* 162.5% */
+    line-height: 26px;
+    margin: 24px 170px 0px 170px;
+    border: none;
 }
-
-
-
 
 footer {
     background: #093931;
@@ -340,9 +357,8 @@ footer {
     flex-direction: row;
     width: 1440px;
     height: 234px;
-    margin: 150px 0px 0px -375px;
+    flex-shrink: 0;
 }
-
 
 .logo-footer {
     display: flex;
@@ -450,8 +466,17 @@ footer {
     font-style: normal;
     font-weight: 400;
     line-height: 22px;
-    margin: 16px 0 0 53px;
+    margin: 16px 0 0 53px;   
 }
+
+input::placeholder{
+    background-image: url("../images/Mail.png");
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-origin: border-box;
+    padding-left: 8px;
+}
+
 .mail-logo{
     display: flex;
     position: relative;
@@ -482,5 +507,3 @@ footer {
     gap: 16px;
     margin: 17px 0;
 }
-
-
