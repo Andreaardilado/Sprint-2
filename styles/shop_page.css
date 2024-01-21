@@ -297,8 +297,6 @@ input.search-txt::placeholder{
 .variacion-derecho{
     display: flex;
     flex-wrap: wrap;
-    background-color:#F5D38E;
-    margin: 0px 130px 0px 10px;
     width:100%;
 }
 
