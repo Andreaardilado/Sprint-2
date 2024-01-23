@@ -519,6 +519,7 @@ header {
 
 
 
+
 footer {
     background: #093931;
     display: flex;
@@ -600,6 +601,12 @@ footer {
     text-decoration: none;
 }
 
+.suscripciones-footer{
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
 .titulo-suscripciones-footer {
     color: #FFF;
     font-family: 'Cormorant Garamond', serif;
@@ -612,7 +619,7 @@ footer {
 
 .texto-suscripciones-footer {
     color: #FAFAFB;
-    font-family: 'Manrope', sans-serif;
+    font-family:'Manrope', sans-serif;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
@@ -635,6 +642,7 @@ footer {
     font-weight: 400;
     line-height: 22px;
     margin: 16px 0 0 53px;
+
 }
 
 input::placeholder{
@@ -644,7 +652,9 @@ input::placeholder{
     background-origin: border-box;
     padding-left: 8px
 }
-.mail-logo {
+
+
+.mail-logo{
     display: flex;
     position: relative;
     left: 65px;
@@ -659,7 +669,7 @@ input::placeholder{
     border-radius: 0px 18px 18px 0px;
     background: #F2C66D;
     color: #6B4A09;
-    font-family: 'Manrope', sans-serif;
+    font-family:'Manrope', sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;

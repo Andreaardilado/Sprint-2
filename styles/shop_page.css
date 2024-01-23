@@ -452,6 +452,7 @@ input.search-txt::placeholder{
 
 
 
+
 footer {
     background: #093931;
     display: flex;
@@ -533,6 +534,12 @@ footer {
     text-decoration: none;
 }
 
+.suscripciones-footer{
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
 .titulo-suscripciones-footer {
     color: #FFF;
     font-family: 'Cormorant Garamond', serif;
@@ -568,6 +575,7 @@ footer {
     font-weight: 400;
     line-height: 22px;
     margin: 16px 0 0 53px;
+
 }
 
 input::placeholder{
@@ -575,8 +583,9 @@ input::placeholder{
     background-repeat: no-repeat;
     background-position: top left;
     background-origin: border-box;
-    padding-left: 25px;
+    padding-left: 8px
 }
+
 
 .mail-logo{
     display: flex;

@@ -569,6 +569,7 @@ header {
     display: flex;
     flex-direction: column;
     width: 42.5%;
+
 }
 
 .titulo-from-the-people {
@@ -579,6 +580,7 @@ header {
     font-weight: 600;
     line-height: 68px;
     margin: 169px 144px 0px 132px;
+
 }
 
 .parrafos-from-the-people-1 {
@@ -609,13 +611,35 @@ header {
 
 .parrafos-from-the-people-2 {
     color: #FFF;
-    font-family: 'Manrope', serif;
-    font-size: 16px;
+    font-family: 'Manrope', sans-serif;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 26px;
-    width: 324px;
-    margin: 66px 32px 133px;
+    line-height: 1.625rem;
+    margin: 1.2rem 0 1rem 1rem;
+
+}
+
+
+.autor-from-the-people-2 {
+    color: #FFF;
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.875rem;
+    margin-top: 1.2rem;
+    margin: 0 0 0 1rem;
+}
+
+.ubicacion-autor-from-the-people-2 {
+    color: #FFF;
+    font-family: 'Manrope', sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.625rem;
+    margin: 0 0 0 1rem;
 }
 
 .botones-from-the-people-left {
@@ -731,6 +755,12 @@ footer {
     text-decoration: none;
 }
 
+.suscripciones-footer{
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
 .titulo-suscripciones-footer {
     color: #FFF;
     font-family: 'Cormorant Garamond', serif;
@@ -743,7 +773,7 @@ footer {
 
 .texto-suscripciones-footer {
     color: #FAFAFB;
-    font-family: 'Manrope', sans-serif;
+    font-family:'Manrope', sans-serif;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
@@ -766,9 +796,10 @@ footer {
     font-weight: 400;
     line-height: 22px;
     margin: 16px 0 0 53px;
+
 }
 
-input::placeholder {
+input::placeholder{
     background-image: url("../images/Mail.png");
     background-repeat: no-repeat;
     background-position: top left;
@@ -776,7 +807,8 @@ input::placeholder {
     padding-left: 8px
 }
 
-.mail-logo {
+
+.mail-logo{
     display: flex;
     position: relative;
     left: 65px;
@@ -791,7 +823,7 @@ input::placeholder {
     border-radius: 0px 18px 18px 0px;
     background: #F2C66D;
     color: #6B4A09;
-    font-family: 'Manrope', sans-serif;
+    font-family:'Manrope', sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
