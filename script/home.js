@@ -1,3 +1,6 @@
+
+const  nombreproducto = "anillo";
+const filtroProducto = tipoProducto(productos, nombreproducto);
 const productos = [
     { 
         id: 1, 
@@ -544,59 +547,6 @@ const productos = [
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     { 
         id: 0 , 
         nombre: "Serene Solitaire Earrings", 
@@ -704,21 +654,8 @@ const productos = [
   
     
 ];
-// filtroTipoProducto es la funcion que cree para filtarr por producto
-function filtroTipoProducto(productos, tipoAccesorio) {
-    return productos.filter (producto => producto.tipoAccesorio === tipoAccesorio);
+
+function tipoProducto(productos, nombreproducto) {
+    return productos.filter(producto => producto.tipoAccesorio === nombreproducto);
   }
-
-  const productosAnillo = filtroTipoProducto(productos, "anillo");
-  console.log(productosAnillos);
-
-  const cajaRegistradora = (
-    totalAPagar,
-    efectivoEntregadoCliente,
-    billetesEnCaja
-  ) => {
-    let status = "";
-    let vueltas = [];
-    // 1. Calcular el cambio que se le debe entregar al cliente
-    const cambio = efectivoEntregadoCliente - totalAPagar;
-    console.log(cambio);}
+console.log(filtroProducto);
