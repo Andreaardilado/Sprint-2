@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 const  nombreproducto = "anillo";
 const filtroProducto = tipoProducto(productos, nombreproducto);
@@ -274,6 +275,8 @@ const productos = [
     },
     
 
+=======
+>>>>>>> 97e0b0198d8e48aee310b0a3af853e035fb76148
 
 
 
@@ -547,6 +550,7 @@ const productos = [
 
 
 
+<<<<<<< HEAD
     { 
         id: 0 , 
         nombre: "Serene Solitaire Earrings", 
@@ -585,77 +589,238 @@ const productos = [
            "Gold":9,
            "Silver": 11,
         }
+=======
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const productos= [
+  {
+    id: 1, 
+    nombre: "Bracelet", 
+    codigo: "B0123",
+    precioUnitario: 125.28,
+    tipoAccesorio: "Bracelet",
+    imagenes: "../images/",
+    descripcion: "Bracelet",
+    cantidadColor:{
+       "Rose Gold":0,
+       "Silver": 0,
+       "Gold": 0,
+>>>>>>> 97e0b0198d8e48aee310b0a3af853e035fb76148
     },
-    { 
-        id: 0 , 
-        nombre: "Luxury Charms Ring", 
-        codigo: "AR126",
-        precioUnitario: 620.73,
-        tipoAccesorio: "aretes",
-        imagenes: "../images/Luxury Charms Ring.png",
-        descripcion: "Candongas gruesas",
-        cantidadColor:{
-           "Gold":4,
-           "Silver": 21,
-        }
-    },
-    { 
-        id: 0 , 
-        nombre: "Delights Earrings", 
-        codigo: "AR127",
-        precioUnitario: 321.71,
-        tipoAccesorio: "aretes",
-        imagenes: "../images/Image (2).png",
-        descripcion: "Candongas delfines",
-        cantidadColor:{
-           "Gold":24,
-           "Silver": 11,
-        }
-    },
-    { 
-        id: 0 , 
-        nombre: "Exquisite Ornaments", 
-        codigo: "AR128",
-        precioUnitario: 125.28,
-        tipoAccesorio: "aretes",
-        imagenes: " ../images/Image 7 (2).png",
-        descripcion: "Ramas verdes menta",
-        cantidadColor:{
-           "Gold":12,
-           "Silver": 4,
-        }
-    },
-    { 
-        id: 0 , 
-        nombre: "Luxurious Lustre", 
-        codigo: "AR129",
-        precioUnitario: 425.28,
-        tipoAccesorio: "aretes",
-        imagenes: " ../images/Image 4a.png",
-        descripcion: "Cinco perlas e imagen crital",
-        cantidadColor:{
-           "Gold":17,
-           "Silver": 14,
-        }
-    },
-    { 
-        id: 0 , 
-        nombre: "Timeless Treasures", 
-        codigo: "AR130",
-        precioUnitario: 125.28,
-        tipoAccesorio: "aretes",
-        imagenes: " ../images/Image 4e.png",
-        descripcion: "Candongas dobles caracol",
-        cantidadColor:{
-           "Gold":7,
-           "Silver": 14,
-        }
-    },
-  
-    
+    cantidadTalla:{
+        "48": 0,
+        "50": 0,
+        "52": 0,
+        "54": 0,
+        "56": 0,
+        "58": 0,
+        "60": 0,
+        "62": 0,
+        "64": 0,
+        "66": 0,
+        "68": 0,
+        "70": 0,
+},
+},
 ];
+    
+const productos= [
+  {
+    id: 1, 
+    nombre: "Luxury Gems Necklace",
+    codigo: "N0123",
+    precioUnitario: 168.76,
+    tipoAccesorio: "Necklace",
+    imagenes: "../images/Luxury Gems Necklace.png",
+    descripcion: "Collar gema rosada",
+    cantidadColor:{
+      "Rose Gold":0,
+      "Silver": 0,
+      "Gold": 0,
+    },
+    cantidadTalla:{
+        "48": 0,
+        "50": 0,
+        "52": 0,
+        "54": 0,
+        "56": 0,
+        "58": 0,
+        "60": 0,
+        "62": 0,
+        "64": 0,
+        "66": 0,
+        "68": 0,
+        "70": 0,
+},
+},
+
+  {
+        id:  
+        nombre: "Reflections Necklace", 
+        codigo: "N0124",
+        precioUnitario:620.73,
+        tipoAccesorio: "Necklace",
+        imagenes: "../images/Reflections Necklace.png",
+        descripcion: "Collar serpiente rojo-negro-dorado",
+        cantidadColor:{
+          "Rose Gold":0,
+          "Silver": 0,
+          "Gold": 0,
+        },
+        cantidadTalla:{
+            "48": 0,
+            "50": 0,
+            "52": 0,
+            "54": 0,
+            "56": 0,
+            "58": 0,
+            "60": 0,
+            "62": 0,
+            "64": 0,
+            "66": 0,
+            "68": 0,
+            "70": 0,
+    },
+  },
+
+  {
+    id:  
+    nombre: "Radiance Necklace", 
+    codigo: "N0125",
+    precioUnitario:168.76,
+    tipoAccesorio: "Necklace",
+    imagenes:  "../images/Image 1(1).jpg" ,
+    descripcion: "collar doble dorado home",
+    cantidadColor:{
+      "Rose Gold":0,
+      "Silver": 0,
+      "Gold": 0,
+    },
+    cantidadTalla:{
+        "48": 0,
+        "50": 0,
+        "52": 0,
+        "54": 0,
+        "56": 0,
+        "58": 0,
+        "60": 0,
+        "62": 0,
+        "64": 0,
+        "66": 0,
+        "68": 0,
+        "70": 0,
+},
+},
+
+{
+  id:  
+  nombre: "Glamour Necklace", 
+  codigo: "N0126",
+  precioUnitario:620.73
+  tipoAccesorio: "Necklace",
+  imagenes:  "../images/Image 1 (3).jpg",
+  descripcion: "collar 4 circulos home",
+  cantidadColor:{
+    "Rose Gold":0,
+    "Silver": 0,
+    "Gold": 0,
+  },
+  cantidadTalla:{
+      "48": 0,
+      "50": 0,
+      "52": 0,
+      "54": 0,
+      "56": 0,
+      "58": 0,
+      "60": 0,
+      "62": 0,
+      "64": 0,
+      "66": 0,
+      "68": 0,
+      "70": 0,
+},
+},
+
+{
+  id:  
+  nombre: "Radiant Reflections", 
+  codigo: "N0127",
+  precioUnitario:
+  tipoAccesorio: "Necklace",
+  imagenes:  "../images/Image 4b.png",
+  descripcion: "collar esmeraldas",
+  cantidadColor:{
+       "Rose Gold":0,
+       "Silver": 0,
+       "Gold": 0,
+  },
+  cantidadTalla:{
+      "48": 0,
+      "50": 0,
+      "52": 0,
+      "54": 0,
+      "56": 0,
+      "58": 0,
+      "60": 0,
+      "62": 0,
+      "64": 0,
+      "66": 0,
+      "68": 0,
+      "70": 0,
+},
+},
+
+{
+  id:  
+  nombre: "Majestic Mementos", 
+  codigo: "N0128",
+  precioUnitario:
+  tipoAccesorio: "Necklace",
+  imagenes: "../images/Image 4d.png",
+  descripcion: "collar perlas colores",
+  cantidadColor:{
+       "Rose Gold":0,
+       "Silver": 0,
+       "Gold": 0,
+  },
+  cantidadTalla:{
+      "48": 0,
+      "50": 0,
+      "52": 0,
+      "54": 0,
+      "56": 0,
+      "58": 0,
+      "60": 0,
+      "62": 0,
+      "64": 0,
+      "66": 0,
+      "68": 0,
+      "70": 0,
+},
+},
+];
+<<<<<<< HEAD
 
 function tipoProducto(productos, nombreproducto) {
     return productos.filter(producto => producto.tipoAccesorio === nombreproducto);
   }
 console.log(filtroProducto);
+=======
+>>>>>>> 97e0b0198d8e48aee310b0a3af853e035fb76148
