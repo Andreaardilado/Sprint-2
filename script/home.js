@@ -1,826 +1,643 @@
-<<<<<<< HEAD
+//Declarar una lista de los productos con los siguientes datos: id, nombre, código, precio
+//unitario, tipo de accesorio (anillo, brazalete, collar, aretes, etc.), imágenes, descripción,
+//cantidad en stock por color y/o talla
 
-const  nombreproducto = "anillo";
-const filtroProducto = tipoProducto(productos, nombreproducto);
+//acá creamos un array con la lista de los productos:
 const productos = [
-    { 
-        id: 1, 
-        nombre: "Aurora Ring", 
-        codigo: "A0123",
-        precioUnitario: 125.28,
-        tipoAccesorio: "anillo",
-        imagenes: "../images/Aurora Ring.png",
-        descripcion: "Anillo diamantado olas",
-        cantidadColor:{
-           "Rose Gold":31,
-           "Silver": 38,
-        },
-        cantidadTalla:{
-            "48": 3,
-            "50": 7,
-            "52": 0,
-            "54": 6,
-            "56": 2,
-            "58": 9,
-            "60": 10,
-            "62": 4,
-            "64": 15,
-            "66": 5,
-            "68": 2,
-            "70": 6,
-        },
-    },
-    { 
-        id: 2, 
-        nombre: "Dreamy Infinity Ring", 
-        codigo: "A0124",
-        precioUnitario: 327.71,
-        tipoAccesorio: "anillo",
-        imagenes: "../images/Dreamy Infinity Ring.png",
-        descripcion: "Anillo diamante rosa",
-        cantidadColor:{
-           "Rose Gold":40,
-           "Silver": 18,
-        },
-        cantidadTalla:{
-            "48": 4,
-            "50": 7,
-            "52": 0,
-            "54": 0,
-            "56": 5,
-            "58": 10,
-            "60": 10,
-            "62": 4,
-            "64": 5,
-            "66": 5,
-            "68": 2,
-            "70": 6,
-        },
-    },
-    { 
-        id: 3, 
-        nombre: "Opulent Jewels Ring", 
-        codigo: "A0125",
-        precioUnitario: 168.76,
-        tipoAccesorio: "anillo",
-        imagenes: "../images/Opulent Jewels Ring.png",
-        descripcion: "Anillo gato",
-        cantidadColor:{
-            "Rose Gold":31,
-           "Silver": 38,
-        },
-        cantidadTalla:{
-            "48": 3,
-            "50": 7,
-            "52": 0,
-            "54": 6,
-            "56": 2,
-            "58": 9,
-            "60": 10,
-            "62": 4,
-            "64": 15,
-            "66": 5,
-            "68": 2,
-            "70": 6,
-        },
-    },
-    { 
-        id: 4, 
-        nombre: "Timeless Elegance Ring", 
-        codigo: "A0126",
-        precioUnitario: 125.28,
-        tipoAccesorio: "anillo",
-        imagenes: "../images/Timeless Elegance Ring.png",
-        descripcion: "3 en 1 lila",
-        cantidadColor:{
-            "Rose Gold":40,
-            "Silver": 18,
-         },
-         cantidadTalla:{
-             "48": 4,
-             "50": 7,
-             "52": 0,
-             "54": 0,
-             "56": 5,
-             "58": 10,
-             "60": 10,
-             "62": 4,
-             "64": 5,
-             "66": 5,
-             "68": 2,
-             "70": 6,
-         },
-    },
-    { 
-        id: 5, 
-        nombre: "Luxury Charms Ring", 
-        codigo: "A0127",
-        precioUnitario: 620.73,
-        tipoAccesorio: "anillo",
-        imagenes: "../images/Luxury Charms Ring.png",
-        descripcion: "Duo perla naranja",
-        cantidadColor:{
-            "Rose Gold":31,
-            "Silver": 38,
-         },
-         cantidadTalla:{
-             "48": 3,
-             "50": 7,
-             "52": 0,
-             "54": 6,
-             "56": 2,
-             "58": 9,
-             "60": 10,
-             "62": 4,
-             "64": 15,
-             "66": 5,
-             "68": 2,
-             "70": 6,
-         },
-    },
-    { 
-        id: 6, 
-        nombre: "Blissful Bloom Ring", 
-        codigo: "A0128",
-        precioUnitario: 620.73,
-        tipoAccesorio: "anillo",
-        imagenes: "../images/Blissful Bloom Ring.png",
-        descripcion: "Anillo hojas",
-        cantidadColor:{
-            "Rose Gold":40,
-            "Silver": 18,
-         },
-         cantidadTalla:{
-             "48": 4,
-             "50": 7,
-             "52": 0,
-             "54": 0,
-             "56": 5,
-             "58": 10,
-             "60": 10,
-             "62": 4,
-             "64": 5,
-             "66": 5,
-             "68": 2,
-             "70": 6,
-         },
-    },
-    { 
-        id: 7, 
-        nombre: "Sparkling Ring", 
-        codigo: "A0129",
-        precioUnitario: 620.73,
-        tipoAccesorio: "anillo",
-        imagenes: "../images/Sparkling Ring.png",
-        descripcion: "Anillo redondo diamantado",
-        cantidadColor:{
-           "Rose Gold":31,
-           "Silver": 38,
-        },
-        cantidadTalla:{
-            "48": 3,
-            "50": 7,
-            "52": 0,
-            "54": 6,
-            "56": 2,
-            "58": 9,
-            "60": 10,
-            "62": 4,
-            "64": 15,
-            "66": 5,
-            "68": 2,
-            "70": 6,
-        },
-    },
-    { 
-        id: 8, 
-        nombre: "Glimmering Ring", 
-        codigo: "A0110",
-        precioUnitario: 620.73,
-        tipoAccesorio: "anillo",
-        imagenes: ".../images/Glimmering Ring.png",
-        descripcion: "Anillo diamantado encadenado",
-        cantidadColor:{
-           "Rose Gold":40,
-           "Silver": 18,
-        },
-        cantidadTalla:{
-            "48": 4,
-            "50": 7,
-            "52": 0,
-            "54": 0,
-            "56": 5,
-            "58": 10,
-            "60": 10,
-            "62": 4,
-            "64": 5,
-            "66": 5,
-            "68": 2,
-            "70": 6,
-        },
-    },
-    { 
-        id: 9, 
-        nombre: "Divine Diamonds", 
-        codigo: "A0111",
-        precioUnitario: 620.73,
-        tipoAccesorio: "anillo",
-        imagenes: "../images/Image4f.png",
-        descripcion: "Anillo diamante",
-        cantidadColor:{
-           "Gold":31,
-           "Silver": 38,
-        },
-        cantidadTalla:{
-            "48": 3,
-            "50": 7,
-            "52": 0,
-            "54": 6,
-            "56": 2,
-            "58": 9,
-            "60": 10,
-            "62": 4,
-            "64": 15,
-            "66": 5,
-            "68": 2,
-            "70": 6,
-        },
-    },
-    { 
-        id: 10, 
-        nombre: "Shimmering Stones", 
-        codigo: "A0112",
-        precioUnitario: 168.76,
-        tipoAccesorio: "anillo",
-        imagenes: "../images/Image 7 (1).png",
-        descripcion: "Anillo incrustación rosa",
-        cantidadColor:{
-           "Gold":40,
-           "Silver": 18,
-        },
-        cantidadTalla:{
-            "48": 4,
-            "50": 7,
-            "52": 0,
-            "54": 0,
-            "56": 5,
-            "58": 10,
-            "60": 10,
-            "62": 4,
-            "64": 5,
-            "66": 5,
-            "68": 2,
-            "70": 6,
-        },
-    },
-    
-
-=======
->>>>>>> 97e0b0198d8e48aee310b0a3af853e035fb76148
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<<<<<<< HEAD
-    { 
-        id: 0 , 
-        nombre: "Serene Solitaire Earrings", 
-        codigo: "AR123",
-        precioUnitario: 125.28,
-        tipoAccesorio: "aretes",
-        imagenes: "../images/Serene Solitaire Earrings.png",
-        descripcion: "Aretes de perlas azules en forma de corazón",
-        cantidadColor:{
-           "Gold":20,
-           "Silver": 8,
-        }
-    },
-    { 
-        id: 0 , 
-        nombre: "Serene Solitaire Earrings", 
-        codigo: "AR124",
-        precioUnitario: 620.73,
-        tipoAccesorio: "aretes",
-        imagenes: "../images/Timeless Halo Earrings.png",
-        descripcion: "Aretes crital cuadrado",
-        cantidadColor:{
-           "Gold":2,
-           "Silver": 18,
-        }
-    },
-    { 
-        id: 0 , 
-        nombre: "Exquisite Earrings", 
-        codigo: "AR125",
-        precioUnitario: 620.73,
-        tipoAccesorio: "aretes",
-        imagenes: "../images/Exquisite Earrings.png",
-        descripcion: "Aretes gota de agua tallados",
-        cantidadColor:{
-           "Gold":9,
-           "Silver": 11,
-        }
-=======
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-const productos= [
   {
-    id: 1, 
-    nombre: "Bracelet", 
+    id: 1,
+    nombre: "Aurora Ring",
+    codigo: "AN123",
+    precioUnitario: 125.28,
+    tipoAccesorio: "anillo",
+    imagenes: "../images/Aurora Ring.png",
+    descripcion: "Anillo diamantado olas",
+    cantidadColor: {
+      "Rose Gold": 31,
+      Silver: 38,
+    },
+    cantidadTalla: {
+      48: 3,
+      50: 7,
+      52: 0,
+      54: 6,
+      56: 2,
+      58: 9,
+      60: 10,
+      62: 4,
+      64: 15,
+      66: 5,
+      68: 2,
+      70: 6,
+    },
+  },
+  {
+    id: 2,
+    nombre: "Dreamy Infinity Ring",
+    codigo: "AN124",
+    precioUnitario: 327.71,
+    tipoAccesorio: "anillo",
+    imagenes: "../images/Dreamy Infinity Ring.png",
+    descripcion: "Anillo diamante rosa",
+    cantidadColor: {
+      "Rose Gold": 40,
+      Silver: 18,
+    },
+    cantidadTalla: {
+      48: 4,
+      50: 7,
+      52: 0,
+      54: 0,
+      56: 5,
+      58: 10,
+      60: 10,
+      62: 4,
+      64: 5,
+      66: 5,
+      68: 2,
+      70: 6,
+    },
+  },
+  {
+    id: 3,
+    nombre: "Opulent Jewels Ring",
+    codigo: "AN125",
+    precioUnitario: 168.76,
+    tipoAccesorio: "anillo",
+    imagenes: "../images/Opulent Jewels Ring.png",
+    descripcion: "Anillo gato",
+    cantidadColor: {
+      "Rose Gold": 31,
+      Silver: 38,
+    },
+    cantidadTalla: {
+      48: 3,
+      50: 7,
+      52: 0,
+      54: 6,
+      56: 2,
+      58: 9,
+      60: 10,
+      62: 4,
+      64: 15,
+      66: 5,
+      68: 2,
+      70: 6,
+    },
+  },
+  {
+    id: 4,
+    nombre: "Timeless Elegance Ring",
+    codigo: "AN126",
+    precioUnitario: 125.28,
+    tipoAccesorio: "anillo",
+    imagenes: "../images/Timeless Elegance Ring.png",
+    descripcion: "3 en 1 lila",
+    cantidadColor: {
+      "Rose Gold": 40,
+      Silver: 18,
+    },
+    cantidadTalla: {
+      48: 4,
+      50: 7,
+      52: 0,
+      54: 0,
+      56: 5,
+      58: 10,
+      60: 10,
+      62: 4,
+      64: 5,
+      66: 5,
+      68: 2,
+      70: 6,
+    },
+  },
+  {
+    id: 5,
+    nombre: "Luxury Charms Ring",
+    codigo: "AN127",
+    precioUnitario: 620.73,
+    tipoAccesorio: "anillo",
+    imagenes: "../images/Luxury Charms Ring.png",
+    descripcion: "Duo perla naranja",
+    cantidadColor: {
+      "Rose Gold": 31,
+      Silver: 38,
+    },
+    cantidadTalla: {
+      48: 3,
+      50: 7,
+      52: 0,
+      54: 6,
+      56: 2,
+      58: 9,
+      60: 10,
+      62: 4,
+      64: 15,
+      66: 5,
+      68: 2,
+      70: 6,
+    },
+  },
+  {
+    id: 6,
+    nombre: "Blissful Bloom Ring",
+    codigo: "AN128",
+    precioUnitario: 620.73,
+    tipoAccesorio: "anillo",
+    imagenes: "../images/Blissful Bloom Ring.png",
+    descripcion: "Anillo hojas",
+    cantidadColor: {
+      "Rose Gold": 40,
+      Silver: 18,
+    },
+    cantidadTalla: {
+      48: 4,
+      50: 7,
+      52: 0,
+      54: 0,
+      56: 5,
+      58: 10,
+      60: 10,
+      62: 4,
+      64: 5,
+      66: 5,
+      68: 2,
+      70: 6,
+    },
+  },
+  {
+    id: 7,
+    nombre: "Sparkling Ring",
+    codigo: "AN129",
+    precioUnitario: 620.73,
+    tipoAccesorio: "anillo",
+    imagenes: "../images/Sparkling Ring.png",
+    descripcion: "Anillo redondo diamantado",
+    cantidadColor: {
+      "Rose Gold": 31,
+      Silver: 38,
+    },
+    cantidadTalla: {
+      48: 3,
+      50: 7,
+      52: 0,
+      54: 6,
+      56: 2,
+      58: 9,
+      60: 10,
+      62: 4,
+      64: 15,
+      66: 5,
+      68: 2,
+      70: 6,
+    },
+  },
+  {
+    id: 8,
+    nombre: "Glimmering Ring",
+    codigo: "AN130",
+    precioUnitario: 620.73,
+    tipoAccesorio: "anillo",
+    imagenes: ".../images/Glimmering Ring.png",
+    descripcion: "Anillo diamantado encadenado",
+    cantidadColor: {
+      "Rose Gold": 40,
+      Silver: 18,
+    },
+    cantidadTalla: {
+      48: 4,
+      50: 7,
+      52: 0,
+      54: 0,
+      56: 5,
+      58: 10,
+      60: 10,
+      62: 4,
+      64: 5,
+      66: 5,
+      68: 2,
+      70: 6,
+    },
+  },
+  {
+    id: 9,
+    nombre: "Divine Diamonds",
+    codigo: "AN131",
+    precioUnitario: 620.73,
+    tipoAccesorio: "anillo",
+    imagenes: "../images/Image4f.png",
+    descripcion: "Anillo diamante",
+    cantidadColor: {
+      Gold: 31,
+      Silver: 38,
+    },
+    cantidadTalla: {
+      48: 3,
+      50: 7,
+      52: 0,
+      54: 6,
+      56: 2,
+      58: 9,
+      60: 10,
+      62: 4,
+      64: 15,
+      66: 5,
+      68: 2,
+      70: 6,
+    },
+  },
+  {
+    id: 10,
+    nombre: "Shimmering Stones",
+    codigo: "AN132",
+    precioUnitario: 168.76,
+    tipoAccesorio: "anillo",
+    imagenes: "../images/Image 7 (1).png",
+    descripcion: "Anillo incrustación rosa",
+    cantidadColor: {
+      Gold: 40,
+      Silver: 18,
+    },
+    cantidadTalla: {
+      48: 4,
+      50: 7,
+      52: 0,
+      54: 0,
+      56: 5,
+      58: 10,
+      60: 10,
+      62: 4,
+      64: 5,
+      66: 5,
+      68: 2,
+      70: 6,
+    },
+  },
+  {
+    id: 11,
+    nombre: "Bracelet",
     codigo: "B0123",
     precioUnitario: 125.28,
     tipoAccesorio: "Bracelet",
     imagenes: "../images/",
     descripcion: "Bracelet",
-    cantidadColor:{
-       "Rose Gold":0,
-       "Silver": 0,
-       "Gold": 0,
->>>>>>> 97e0b0198d8e48aee310b0a3af853e035fb76148
+    cantidadColor: {
+      "Rose Gold": 0,
+      Silver: 0,
+      Gold: 0,
     },
-    cantidadTalla:{
-        "48": 0,
-        "50": 0,
-        "52": 0,
-        "54": 0,
-        "56": 0,
-        "58": 0,
-        "60": 0,
-        "62": 0,
-        "64": 0,
-        "66": 0,
-        "68": 0,
-        "70": 0,
-},
-},
-];
-    
-const productos= [
+    cantidadTalla: {
+      48: 0,
+      50: 0,
+      52: 0,
+      54: 0,
+      56: 0,
+      58: 0,
+      60: 0,
+      62: 0,
+      64: 0,
+      66: 0,
+      68: 0,
+      70: 0,
+    },
+  },
   {
-    id: 1, 
+    id: 12,
     nombre: "Luxury Gems Necklace",
     codigo: "N0123",
     precioUnitario: 168.76,
     tipoAccesorio: "Necklace",
     imagenes: "../images/Luxury Gems Necklace.png",
     descripcion: "Collar gema rosada",
-    cantidadColor:{
-      "Rose Gold":0,
-      "Silver": 0,
-      "Gold": 0,
+    cantidadColor: {
+      "Rose Gold": 0,
+      Silver: 0,
+      Gold: 0,
     },
-    cantidadTalla:{
-        "48": 0,
-        "50": 0,
-        "52": 0,
-        "54": 0,
-        "56": 0,
-        "58": 0,
-        "60": 0,
-        "62": 0,
-        "64": 0,
-        "66": 0,
-        "68": 0,
-        "70": 0,
-},
-},
-
-  {
-        id:  
-        nombre: "Reflections Necklace", 
-        codigo: "N0124",
-        precioUnitario:620.73,
-        tipoAccesorio: "Necklace",
-        imagenes: "../images/Reflections Necklace.png",
-        descripcion: "Collar serpiente rojo-negro-dorado",
-        cantidadColor:{
-          "Rose Gold":0,
-          "Silver": 0,
-          "Gold": 0,
-        },
-        cantidadTalla:{
-            "48": 0,
-            "50": 0,
-            "52": 0,
-            "54": 0,
-            "56": 0,
-            "58": 0,
-            "60": 0,
-            "62": 0,
-            "64": 0,
-            "66": 0,
-            "68": 0,
-            "70": 0,
+    cantidadTalla: {
+      48: 0,
+      50: 0,
+      52: 0,
+      54: 0,
+      56: 0,
+      58: 0,
+      60: 0,
+      62: 0,
+      64: 0,
+      66: 0,
+      68: 0,
+      70: 0,
     },
   },
-
   {
-    id:  
-    nombre: "Radiance Necklace", 
-    codigo: "N0125",
-    precioUnitario:168.76,
+    id: 13,
+    nombre: "Reflections Necklace",
+    codigo: "N0124",
+    precioUnitario: 620.73,
     tipoAccesorio: "Necklace",
-    imagenes:  "../images/Image 1(1).jpg" ,
-    descripcion: "collar doble dorado home",
-    cantidadColor:{
-      "Rose Gold":0,
-      "Silver": 0,
-      "Gold": 0,
+    imagenes: "../images/Reflections Necklace.png",
+    descripcion: "Collar serpiente rojo-negro-dorado",
+    cantidadColor: {
+      "Rose Gold": 0,
+      Silver: 0,
+      Gold: 0,
     },
-    cantidadTalla:{
-        "48": 0,
-        "50": 0,
-        "52": 0,
-        "54": 0,
-        "56": 0,
-        "58": 0,
-        "60": 0,
-        "62": 0,
-        "64": 0,
-        "66": 0,
-        "68": 0,
-        "70": 0,
-},
-},
-
-{
-  id:  
-  nombre: "Glamour Necklace", 
-  codigo: "N0126",
-  precioUnitario:620.73
-  tipoAccesorio: "Necklace",
-  imagenes:  "../images/Image 1 (3).jpg",
-  descripcion: "collar 4 circulos home",
-  cantidadColor:{
-    "Rose Gold":0,
-    "Silver": 0,
-    "Gold": 0,
+    cantidadTalla: {
+      48: 0,
+      50: 0,
+      52: 0,
+      54: 0,
+      56: 0,
+      58: 0,
+      60: 0,
+      62: 0,
+      64: 0,
+      66: 0,
+      68: 0,
+      70: 0,
+    },
   },
-  cantidadTalla:{
-      "48": 0,
-      "50": 0,
-      "52": 0,
-      "54": 0,
-      "56": 0,
-      "58": 0,
-      "60": 0,
-      "62": 0,
-      "64": 0,
-      "66": 0,
-      "68": 0,
-      "70": 0,
-},
-},
-
-{
-  id:  
-  nombre: "Radiant Reflections", 
-  codigo: "N0127",
-  precioUnitario:
-  tipoAccesorio: "Necklace",
-  imagenes:  "../images/Image 4b.png",
-  descripcion: "collar esmeraldas",
-  cantidadColor:{
-       "Rose Gold":0,
-       "Silver": 0,
-       "Gold": 0,
+  {
+    id: 14,
+    nombre: "Radiance Necklace",
+    codigo: "N0125",
+    precioUnitario: 168.76,
+    tipoAccesorio: "Necklace",
+    imagenes: "../images/Image 1(1).jpg",
+    descripcion: "collar doble dorado home",
+    cantidadColor: {
+      "Rose Gold": 0,
+      Silver: 0,
+      Gold: 0,
+    },
+    cantidadTalla: {
+      48: 0,
+      50: 0,
+      52: 0,
+      54: 0,
+      56: 0,
+      58: 0,
+      60: 0,
+      62: 0,
+      64: 0,
+      66: 0,
+      68: 0,
+      70: 0,
+    },
   },
-  cantidadTalla:{
-      "48": 0,
-      "50": 0,
-      "52": 0,
-      "54": 0,
-      "56": 0,
-      "58": 0,
-      "60": 0,
-      "62": 0,
-      "64": 0,
-      "66": 0,
-      "68": 0,
-      "70": 0,
-},
-},
-
-{
-  id:  
-  nombre: "Majestic Mementos", 
-  codigo: "N0128",
-  precioUnitario:
-  tipoAccesorio: "Necklace",
-  imagenes: "../images/Image 4d.png",
-  descripcion: "collar perlas colores",
-  cantidadColor:{
-       "Rose Gold":0,
-       "Silver": 0,
-       "Gold": 0,
+  {
+    id: 15,
+    nombre: "Glamour Necklace",
+    codigo: "N0126",
+    precioUnitario: 620.73,
+    tipoAccesorio: "Necklace",
+    imagenes: "../images/Image 1 (3).jpg",
+    descripcion: "collar 4 circulos home",
+    cantidadColor: {
+      "Rose Gold": 0,
+      Silver: 0,
+      Gold: 0,
+    },
+    cantidadTalla: {
+      48: 0,
+      50: 0,
+      52: 0,
+      54: 0,
+      56: 0,
+      58: 0,
+      60: 0,
+      62: 0,
+      64: 0,
+      66: 0,
+      68: 0,
+      70: 0,
+    },
   },
-  cantidadTalla:{
-      "48": 0,
-      "50": 0,
-      "52": 0,
-      "54": 0,
-      "56": 0,
-      "58": 0,
-      "60": 0,
-      "62": 0,
-      "64": 0,
-      "66": 0,
-      "68": 0,
-      "70": 0,
-},
-},
+
+  {
+    id: 16,
+    nombre: "Radiant Reflections",
+    codigo: "N0127",
+    precioUnitario: 200.1,
+    tipoAccesorio: "Necklace",
+    imagenes: "../images/Image 4b.png",
+    descripcion: "collar esmeraldas",
+    cantidadColor: {
+      "Rose Gold": 0,
+      Silver: 0,
+      Gold: 0,
+    },
+    cantidadTalla: {
+      48: 0,
+      50: 0,
+      52: 0,
+      54: 0,
+      56: 0,
+      58: 0,
+      60: 0,
+      62: 0,
+      64: 0,
+      66: 0,
+      68: 0,
+      70: 0,
+    },
+  },
+  {
+    id: 17,
+    nombre: "Majestic Mementos",
+    codigo: "N0128",
+    precioUnitario: 200.32,
+    tipoAccesorio: "Necklace",
+    imagenes: "../images/Image 4d.png",
+    descripcion: "collar perlas colores",
+    cantidadColor: {
+      "Rose Gold": 0,
+      Silver: 0,
+      Gold: 0,
+    },
+    cantidadTalla: {
+      48: 0,
+      50: 0,
+      52: 0,
+      54: 0,
+      56: 0,
+      58: 0,
+      60: 0,
+      62: 0,
+      64: 0,
+      66: 0,
+      68: 0,
+      70: 0,
+    },
+  },
+  {
+    id: 18,
+    nombre: "Serene Solitaire Earrings",
+    codigo: "AR123",
+    precioUnitario: 125.28,
+    tipoAccesorio: "aretes",
+    imagenes: "../images/Serene Solitaire Earrings.png",
+    descripcion: "Aretes de perlas azules en forma de corazón",
+    cantidadColor: {
+      Gold: 20,
+      Silver: 8,
+    },
+  },
+  {
+    id: 19,
+    nombre: "Serene Solitaire Earrings",
+    codigo: "AR124",
+    precioUnitario: 620.73,
+    tipoAccesorio: "aretes",
+    imagenes: "../images/Timeless Halo Earrings.png",
+    descripcion: "Aretes crital cuadrado",
+    cantidadColor: {
+      Gold: 2,
+      Silver: 18,
+    },
+  },
+  {
+    id: 20,
+    nombre: "Exquisite Earrings",
+    codigo: "AR125",
+    precioUnitario: 620.73,
+    tipoAccesorio: "aretes",
+    imagenes: "../images/Exquisite Earrings.png",
+    descripcion: "Aretes gota de agua tallados",
+    cantidadColor: {
+      Gold: 9,
+      Silver: 11,
+    },
+  },
+  {
+    id: 21,
+    nombre: "Luxury Charms Ring",
+    codigo: "AR126",
+    precioUnitario: 620.73,
+    tipoAccesorio: "aretes",
+    imagenes: "../images/Luxury Charms Ring.png",
+    descripcion: "Candongas gruesas",
+    cantidadColor: {
+      Gold: 4,
+      Silver: 21,
+    },
+  },
+  {
+    id: 22,
+    nombre: "Delights Earrings",
+    codigo: "AR127",
+    precioUnitario: 321.71,
+    tipoAccesorio: "aretes",
+    imagenes: "../images/Image (2).png",
+    descripcion: "Candongas delfines",
+    cantidadColor: {
+      Gold: 24,
+      Silver: 11,
+    },
+  },
+  {
+    id: 23,
+    nombre: "Exquisite Ornaments",
+    codigo: "AR128",
+    precioUnitario: 125.28,
+    tipoAccesorio: "aretes",
+    imagenes: " ../images/Image 7 (2).png",
+    descripcion: "Ramas verdes menta",
+    cantidadColor: {
+      Gold: 12,
+      Silver: 4,
+    },
+  },
+  {
+    id: 24,
+    nombre: "Luxurious Lustre",
+    codigo: "AR129",
+    precioUnitario: 425.28,
+    tipoAccesorio: "aretes",
+    imagenes: " ../images/Image 4a.png",
+    descripcion: "Cinco perlas e imagen crital",
+    cantidadColor: {
+      Gold: 17,
+      Silver: 14,
+    },
+  },
+  {
+    id: 25,
+    nombre: "Timeless Treasures",
+    codigo: "AR130",
+    precioUnitario: 125.28,
+    tipoAccesorio: "aretes",
+    imagenes: " ../images/Image 4e.png",
+    descripcion: "Candongas dobles caracol",
+    cantidadColor: {
+      Gold: 7,
+      Silver: 14,
+    },
+  },
 ];
-<<<<<<< HEAD
+// Escribir una función que reciba como parámetros un array de productos y el nombre de
+// un tipo de producto, que utilice la función de array que permita filtrar la lista por la
+// categoría o tipo y devuelva el array resultante (INFERIMOS QUE ES LA LISTA DE CADA ACCESORIO). Luego, llamar la función pasándole como
+// argumentos la lista de productos declarado en el ítem anterior y cualquier tipo de
+// accesorio que exista en la lista y, por último, mostrar el resultado en la consola del
+// navegador.
 
-function tipoProducto(productos, nombreproducto) {
-    return productos.filter(producto => producto.tipoAccesorio === nombreproducto);
-  }
-console.log(filtroProducto);
-=======
->>>>>>> 97e0b0198d8e48aee310b0a3af853e035fb76148
+const tipoProductoFiltro = (listaProductos, tipoProducto) => {
+  return listaProductos.filter(
+    (producto) => producto.tipoAccesorio === tipoProducto
+  );
+}; //definir paso a paso qué debe hacer una función
+
+const aretas /*Cree esta variable para que console imprima y es igual a la función*/ =
+  tipoProductoFiltro(productos, "aretes");
+console.log(aretas /*aca la llamo inmediatamente*/);
+
+// Escribir una función que realice la búsqueda de productos por nombre, reciba como
+// parámetro un array de productos y un término de búsqueda (es decir, una cadena de
+// caracteres) y retorne un array con todos los productos cuyos nombres contengan los
+// caracteres del segundo parámetro. Luego, llamar la función pasándole como argumentos
+// datos de prueba y mostrar el resultado en la consola del navegador
+
+const tipoProductoBusqueda = (listaProductos, productoPorNombre) => {
+  return listaProductos.filter(
+    (producto) =>
+      producto.nombre.toLowerCase().indexOf(productoPorNombre) !== -1
+  );
+};
+// indexOf(elemento): Devuelve el índice de la primera ocurrencia del elemento en el array. Si
+// no se encuentra, devuelve -1.
+const nombreDeProducto = tipoProductoBusqueda(productos, "ring");
+console.log(nombreDeProducto);
+
+
+// Crear una función que ordene un array de productos por precios de manera ascendente
+// y descendente y retorne el array resultante. Ejecutar la función y mostrar el resultado en
+// consola
+/*const productoascendente = (listaProductos) => {
+  return listaProductos.reduce((producto1, producto2) => {
+    if (producto1.precioUnitario < producto2.precioUnitario) {
+      return producto2;
+    } else if (producto1.precioUnitario > producto2.precioUnitario) {
+      return producto1;
+    } else {
+      return producto1;
+    }
+  }, []);
+};
+
+const ascendenciaProducto = productoascendente(productos);
+console.log(ascendenciaProducto);*/
+
+const ordenarPorValor = (producto1, producto2) => {
+  return producto1.precioUnitario - producto2.precioUnitario;
+ 
+};
+
+const precioOrdenado = (listaProductos) => {
+  return listaProductos.sort(ordenarPorValor);
+};
+
+console.log(precioOrdenado(productos));
+
+
