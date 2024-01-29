@@ -611,33 +611,38 @@ const nombreDeProducto = tipoProductoBusqueda(productos, "ring");
 console.log(nombreDeProducto);
 
 
-// Crear una función que ordene un array de productos por precios de manera ascendente
-// y descendente y retorne el array resultante. Ejecutar la función y mostrar el resultado en
-// consola
-/*const productoascendente = (listaProductos) => {
-  return listaProductos.reduce((producto1, producto2) => {
-    if (producto1.precioUnitario < producto2.precioUnitario) {
-      return producto2;
-    } else if (producto1.precioUnitario > producto2.precioUnitario) {
-      return producto1;
-    } else {
-      return producto1;
-    }
-  }, []);
-};
+/* 4. Crear una función que ordene un array de productos por precios de manera ascendente y descendente 
+  y retorne el array resultante. Ejecutar la función y mostrar el resultado en consola.*/
+  
+  const ordenar = (productos, ascendente = true) => {
+    return [...productos].sort((a, b) =>
+      ascendente
+        ? a.precioUnitario - b.precioUnitario
+        : b.precioUnitario - a.precioUnitario
+    );
+  };
+  
+  console.log("Descendente: ", ordenar(productos, false));
+  console.log("Ascendente: ", ordenar(productos));
 
-const ascendenciaProducto = productoascendente(productos);
-console.log(ascendenciaProducto);*/
-
-const ordenarPorValor = (producto1, producto2) => {
-  return producto1.precioUnitario - producto2.precioUnitario;
- 
-};
-
-const precioOrdenado = (listaProductos) => {
-  return listaProductos.sort(ordenarPorValor);
-};
-
-console.log(precioOrdenado(productos));
-
-
+// 5- Crear una función que calcule el total a pagar de una compra, reciba como parámetros un array de productos donde cada producto, 
+// tenga como propiedades la cantidad y precio unitario del producto y devuelva el valor que corresponda a la sumatoria de la cantidad por el precio de cada producto.
+// Ejecutar la función con datos de prueba y mostrar el resultado en la consola del navegador.
+  let total = 0;
+  const productos = [
+    { nombre: 'Glamour Necklace', precio: 620.73},
+    { nombre: 'Luxury Gems Necklace', precio:168.76},
+    { nombre: 'Radiance Necklace', precio: 168.76 },
+    { nombre: 'eflections Necklace', precio: 620.73 },
+  ]; 
+  
+  // Ejecutarlo con un .reduce
+  const totalCuenta = productos.reduce((total, producto) => {
+    return total + producto.precio;
+  }, 0);
+  // total es el acumulador
+  // producto es el objeto del arreglo
+  // En producto se acumula todos los precios con las iteraciones y luego se las pasa al acumulador que es total*/
+  
+  console.log("Total Cuenta", totalCuenta);
+  
