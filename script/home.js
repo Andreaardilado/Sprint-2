@@ -483,9 +483,23 @@ const productos = [
       Gold: 20,
       Silver: 8,
     },
+    cantidadTalla: {
+      48: 2,
+      50: 2,
+      52: 2,
+      54: 2,
+      56: 2,
+      58: 2,
+      60: 2,
+      62: 2,
+      64: 2,
+      66: 2,
+      68: 2,
+      70: 4,
+    },
   },
   {
-    id: 19,
+    id: 29,
     nombre: "Serene Solitaire Earrings",
     codigo: "AR124",
     precioUnitario: 620.73,
@@ -495,6 +509,20 @@ const productos = [
     cantidadColor: {
       Gold: 2,
       Silver: 18,
+    },
+    cantidadTalla: {
+      48: 2,
+      50: 0,
+      52: 2,
+      54: 2,
+      56: 2,
+      58: 2,
+      60: 2,
+      62: 0,
+      64: 2,
+      66: 2,
+      68: 2,
+      70: 2,
     },
   },
   {
@@ -509,6 +537,20 @@ const productos = [
       Gold: 9,
       Silver: 11,
     },
+    cantidadTalla: {
+      48: 2,
+      50: 0,
+      52: 2,
+      54: 2,
+      56: 2,
+      58: 2,
+      60: 2,
+      62: 0,
+      64: 2,
+      66: 2,
+      68: 2,
+      70: 2,
+    },
   },
   {
     id: 21,
@@ -522,6 +564,20 @@ const productos = [
       Gold: 4,
       Silver: 21,
     },
+    cantidadTalla: {
+      48: 2,
+      50: 2,
+      52: 2,
+      54: 2,
+      56: 2,
+      58: 2,
+      60: 2,
+      62: 2,
+      64: 2,
+      66: 2,
+      68: 2,
+      70: 2,
+    },
   },
   {
     id: 22,
@@ -533,8 +589,23 @@ const productos = [
     descripcion: "Candongas delfines",
     cantidadColor: {
       Gold: 24,
-      Silver: 11,
+      Silver: 12,
     },
+    cantidadTalla: {
+      48: 2,
+      50: 2,
+      52: 2,
+      54: 2,
+      56: 2,
+      58: 2,
+      60: 2,
+      62: 2,
+      64: 2,
+      66: 2,
+      68: 2,
+      70: 14,
+    },
+    
   },
   {
     id: 23,
@@ -548,6 +619,20 @@ const productos = [
       Gold: 12,
       Silver: 4,
     },
+    cantidadTalla: {
+      48: 2,
+      50: 1,
+      52: 1,
+      54: 1,
+      56: 1,
+      58: 1,
+      60: 1,
+      62: 1,
+      64: 1,
+      66: 1,
+      68: 1,
+      70: 4,
+    },
   },
   {
     id: 24,
@@ -559,7 +644,21 @@ const productos = [
     descripcion: "Cinco perlas e imagen crital",
     cantidadColor: {
       Gold: 17,
-      Silver: 14,
+      Silver: 12,
+    },
+    cantidadTalla: {
+      48: 2,
+      50: 2,
+      52: 2,
+      54: 2,
+      56: 2,
+      58: 2,
+      60: 2,
+      62: 3,
+      64: 3,
+      66: 3,
+      68: 3,
+      70: 3,
     },
   },
   {
@@ -571,8 +670,22 @@ const productos = [
     imagenes: " ../images/Image 4e.png",
     descripcion: "Candongas dobles caracol",
     cantidadColor: {
-      Gold: 7,
+      Gold: 8,
       Silver: 14,
+    },
+    cantidadTalla: {
+      48: 2,
+      50: 2,
+      52: 2,
+      54: 2,
+      56: 2,
+      58: 2,
+      60: 2,
+      62: 1,
+      64: 1,
+      66: 1,
+      68: 1,
+      70: 4,
     },
   },
 ];
@@ -607,37 +720,13 @@ const tipoProductoBusqueda = (listaProductos, productoPorNombre) => {
 };
 // indexOf(elemento): Devuelve el índice de la primera ocurrencia del elemento en el array. Si
 // no se encuentra, devuelve -1.
-const nombreDeProducto = tipoProductoBusqueda(productos, "ring");
+const nombreDeProducto = tipoProductoBusqueda(productos, "rin");
 console.log(nombreDeProducto);
 
 
-// Crear una función que ordene un array de productos por precios de manera ascendente
-// y descendente y retorne el array resultante. Ejecutar la función y mostrar el resultado en
-// consola
-/*const productoascendente = (listaProductos) => {
-  return listaProductos.reduce((producto1, producto2) => {
-    if (producto1.precioUnitario < producto2.precioUnitario) {
-      return producto2;
-    } else if (producto1.precioUnitario > producto2.precioUnitario) {
-      return producto1;
-    } else {
-      return producto1;
-    }
-  }, []);
-};
 
-const ascendenciaProducto = productoascendente(productos);
-console.log(ascendenciaProducto);*/
 
-const ordenarPorValor = (producto1, producto2) => {
-  return producto1.precioUnitario - producto2.precioUnitario;
- 
-};
 
-const precioOrdenado = (listaProductos) => {
-  return listaProductos.sort(ordenarPorValor);
-};
 
-console.log(precioOrdenado(productos));
 
 
