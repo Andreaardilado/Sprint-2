@@ -722,3 +722,50 @@ const tipoProductoBusqueda = (listaProductos, productoPorNombre) => {
 const nombreDeProducto = tipoProductoBusqueda(productos, "rin");
 console.log(nombreDeProducto);
 
+<<<<<<< HEAD
+=======
+
+<<<<<<< HEAD
+/* 4. Crear una función que ordene un array de productos por precios de manera ascendente y descendente 
+  y retorne el array resultante. Ejecutar la función y mostrar el resultado en consola.*/
+  
+  const ordenar = (productos, ascendente = true) => {
+    return [...productos].sort((a, b) =>
+      ascendente
+        ? a.precioUnitario - b.precioUnitario
+        : b.precioUnitario - a.precioUnitario
+    );
+  };
+  
+  console.log("Descendente: ", ordenar(productos, false));
+  console.log("Ascendente: ", ordenar(productos));
+=======
+
+
+
+
+
+>>>>>>> 4bf74bbd19217cfc3dfbf179afe1c8971eeab30c
+
+// 5- Crear una función que calcule el total a pagar de una compra, reciba como parámetros un array de productos donde cada producto, 
+// tenga como propiedades la cantidad y precio unitario del producto y devuelva el valor que corresponda a la sumatoria de la cantidad por el precio de cada producto.
+// Ejecutar la función con datos de prueba y mostrar el resultado en la consola del navegador.
+  let total = 0;
+  const productos = [
+    { nombre: 'Glamour Necklace', precio: 620.73},
+    { nombre: 'Luxury Gems Necklace', precio:168.76},
+    { nombre: 'Radiance Necklace', precio: 168.76 },
+    { nombre: 'eflections Necklace', precio: 620.73 },
+  ]; 
+  
+  // Ejecutarlo con un .reduce
+  const totalCuenta = productos.reduce((total, producto) => {
+    return total + producto.precio;
+  }, 0);
+  // total es el acumulador
+  // producto es el objeto del arreglo
+  // En producto se acumula todos los precios con las iteraciones y luego se las pasa al acumulador que es total*/
+  
+  console.log("Total Cuenta", totalCuenta);
+  
+>>>>>>> a94994670e51e4295365ee327810ceb6e84e3916
