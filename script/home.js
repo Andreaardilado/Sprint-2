@@ -605,7 +605,6 @@ const productos = [
       68: 2,
       70: 14,
     },
-    
   },
   {
     id: 23,
@@ -691,7 +690,7 @@ const productos = [
 ];
 // Escribir una función que reciba como parámetros un array de productos y el nombre de
 // un tipo de producto, que utilice la función de array que permita filtrar la lista por la
-// categoría o tipo y devuelva el array resultante (INFERIMOS QUE ES LA LISTA DE CADA ACCESORIO). Luego, llamar la función pasándole como
+// categoría o tipo y devuelva el array resultante. Luego, llamar la función pasándole como
 // argumentos la lista de productos declarado en el ítem anterior y cualquier tipo de
 // accesorio que exista en la lista y, por último, mostrar el resultado en la consola del
 // navegador.
@@ -702,9 +701,9 @@ const tipoProductoFiltro = (listaProductos, tipoProducto) => {
   );
 }; //definir paso a paso qué debe hacer una función
 
-const aretas /*Cree esta variable para que console imprima y es igual a la función*/ =
-  tipoProductoFiltro(productos, "aretes");
-console.log(aretas /*aca la llamo inmediatamente*/);
+const producto /*Cree esta variable para que console imprima y es igual a la función*/ =
+  tipoProductoFiltro(productos, "Necklace");
+console.log(producto /*aca la llamo inmediatamente*/);
 
 // Escribir una función que realice la búsqueda de productos por nombre, reciba como
 // parámetro un array de productos y un término de búsqueda (es decir, una cadena de
@@ -722,11 +721,4 @@ const tipoProductoBusqueda = (listaProductos, productoPorNombre) => {
 // no se encuentra, devuelve -1.
 const nombreDeProducto = tipoProductoBusqueda(productos, "rin");
 console.log(nombreDeProducto);
-
-
-
-
-
-
-
 
