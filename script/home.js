@@ -554,18 +554,18 @@ const productos = [
   },
   {
     id: 21,
-    nombre: "Luxury Charms Ring",
+    nombre: "Luxury Charms",
     codigo: "AR126",
     precioUnitario: 620.73,
     tipoAccesorio: "aretes",
     imagenes: "../images/Luxury Charms Ring.png",
     descripcion: "Candongas gruesas",
     cantidadColor: {
-      Gold: 4,
+      Gold: 6,
       Silver: 21,
     },
     cantidadTalla: {
-      48: 2,
+      48: 4,
       50: 2,
       52: 2,
       54: 2,
